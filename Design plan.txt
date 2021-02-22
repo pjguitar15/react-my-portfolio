@@ -1,0 +1,34 @@
+Global state
+//Do testing with colors
+
+Orange: #F26C4F
+
+Dark Mode:
+#222222 - light dark
+#1F1F1F - dark
+#F2F2F2 - text color
+#1A1A1A - works card bgColor
+#E87F28 - Journey dots
+
+Light Mode:
+
+
+declare Data inside global state
+
+=====================================
+Router
+Components
+	GlobalComponents(Navbar, ThemeToggle)
+	1. Home
+		Components: navbar(sticky top), mainTitle(with buttons), mainDesc, ThemeToggle)
+	2. About
+	3. Works
+	5. Journey
+	6. Contact
+
+
+
+CSS (use VH for background height) 
+Font: Raleway Extra Bold 800
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+font-family: 'Raleway', sans-serif;

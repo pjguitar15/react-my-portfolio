@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+body {
+  background-color: #f5f4f8;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navLink {
+  font-weight: 500;
+  font-size: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  background-color: #f26c50;
+  padding: 8px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.myName {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.downloadCv {
+  background: #f26c50;
+  padding: 7px 20px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 50px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.downloadCv:hover {
+  background: #ffa08d;
+}
+
+.contactButton {
+  background: none;
+  padding: 5.9px 20px;
+  border: solid rgb(29, 29, 29) 0.1px;
+  color: rgb(29, 29, 29);
+  font-weight: 600;
+  border-radius: 50px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+.contactButton:hover {
+  background: #f26c50;
+  border: solid #f26c50 0.2px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.skillCard:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: #f7f7f7;
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+textarea,
+.contactInput {
+  border: none;
+  width: 83%;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+textarea:focus,
+.contactInput:focus {
+  outline: none;
+  border: none;
+}
+
+@media (max-width: 544px) {
+  .myName {
+    font-size: 40px;
   }
-  to {
-    transform: rotate(360deg);
+  .subtitle {
+    font-size: 18px;
+    text-align: justify;
+  }
+  textarea,
+  .contactInput {
+    width: 100%;
   }
 }
