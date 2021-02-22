@@ -5,7 +5,7 @@ const NavbarComponent = () => {
     <div>
       <Navbar bg='light' expand='xl' sticky='top'>
         <Navbar.Brand href='#home'>
-          <span className='logo'>Philcob</span>
+          <span className='logo ml-5'>Philcob</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>

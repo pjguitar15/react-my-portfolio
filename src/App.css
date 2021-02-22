@@ -93,6 +93,11 @@ textarea:focus,
   width: 50px;
 }
 
+.undrawSVG {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
 @media (max-width: 544px) {
   .myName {
     font-size: 40px;

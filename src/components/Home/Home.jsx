@@ -1,7 +1,8 @@
 import React from 'react'
 import { Spring } from 'react-spring/renderprops'
 import NavbarComponent from '../NavbarComponent'
-import { Jumbotron, Button, Container } from 'react-bootstrap'
+import logo from '../logo.svg'
+import { Jumbotron, Container } from 'react-bootstrap'
 const Home = () => {
   return (
     <Spring
@@ -17,6 +18,14 @@ const Home = () => {
             style={{ background: '#FAFAFC', padding: '100px 0 100px 0' }}
           >
             <Container className='text-center text-lg-left'>
+              <div>
+                <img
+                  className='col-6 d-inline undrawSVG mb-4'
+                  style={{ height: '100%' }}
+                  src={logo}
+                  alt=''
+                />
+              </div>
               <span className='myName'>Philcob Suzuki Josol</span>
               <div className='col-lg-8 p-0'>
                 <p className='subtitle mt-2 p-0'>
