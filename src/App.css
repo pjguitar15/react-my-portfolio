@@ -1,5 +1,7 @@
 body {
   background-color: #f5f4f8;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .navLink {
@@ -77,6 +79,18 @@ textarea:focus,
 .contactInput:focus {
   outline: none;
   border: none;
+}
+
+.aboutMe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.aboutMeImg {
+  height: 50px;
+  width: 50px;
 }
 
 @media (max-width: 544px) {

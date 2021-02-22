@@ -2,10 +2,10 @@ import React from 'react'
 import { Container } from 'react-bootstrap'
 const ContactPage = () => {
   return (
-    <div className='py-5' style={{ background: '#FAFAFC' }}>
-      <h3 style={{ fontWeight: '700' }} className='text-center mb-3 mt-5'>
+    <div style={{ background: '#FAFAFC', padding: '5rem 0' }}>
+      <h4 style={{ fontWeight: '700' }} className='text-center mb-5'>
         HAVE SOME QUESTIONS?
-      </h3>
+      </h4>
       <Container>
         <form action='' className='text-center'>
           <div className='contactInputDiv'>
