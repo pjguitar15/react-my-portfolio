@@ -1,50 +1,48 @@
 import React from 'react'
 import { Spring } from 'react-spring/renderprops'
 import NavbarComponent from '../NavbarComponent'
-import logo from '../logo.svg'
+import logo from '../../Assets/logo.svg'
 import { Jumbotron, Container } from 'react-bootstrap'
+import pdf from '../../Assets/cv.pdf'
 const Home = () => {
   return (
-    <Spring
-      from={{ opacity: 0, marginTop: -500 }}
-      to={{ opacity: 1, marginTop: 0 }}
-      config={{ delay: 50, duration: 800 }}
-    >
-      {(props) => (
-        <div style={props}>
-          <NavbarComponent />
-          <Jumbotron
-            className='shadow-sm'
-            style={{ background: '#FAFAFC', padding: '100px 0 100px 0' }}
-          >
-            <Container className='text-center text-lg-left'>
-              <div>
-                <img
-                  className='col-6 d-inline undrawSVG mb-4'
-                  style={{ height: '100%' }}
-                  src={logo}
-                  alt=''
-                />
-              </div>
-              <span className='myName'>Philcob Suzuki Josol</span>
-              <div className='col-lg-8 p-0'>
-                <p className='subtitle mt-2 p-0'>
-                  I am an aspiring Frontend Developer that develops responsive
-                  and dynamic Website using tools and frameworks which gives me
-                  more flexible time management. // draft
-                </p>
-              </div>
-              <p className='mt-5'>
-                <button className='downloadCv'>Download CV</button>
-                <button className='ml-2 contactButton inlineButtons'>
-                  Contact Me
-                </button>
-              </p>
-            </Container>
-          </Jumbotron>
-        </div>
-      )}
-    </Spring>
+    <div>
+      <NavbarComponent />
+      <Jumbotron
+        style={{ background: '#FAFAFC', height: '100vh', width: '100%' }}
+      >
+        <Container
+          style={{ marginTop: '10vh' }}
+          className='text-center text-xl-left'
+        >
+          <div className='col-sm-12'>
+            <img
+              className='col-lg-6 col-md-9 col-sm-12 d-inline undrawSVG mb-4'
+              style={{ height: '100%' }}
+              src={logo}
+              alt=''
+            />
+          </div>
+          <span className='myName'>Philcob Suzuki Josol</span>
+          <div className=' p-0'>
+            <p className='subtitle mt-2 p-0 text-center text-xl-left'>
+              I am an aspiring Frontend Developer that develops responsive and
+              dynamic Website using tools and frameworks which gives me more
+              flexible time management. // draft
+            </p>
+          </div>
+          <p className='mt-5'>
+            <a href={pdf} className='downloadCv text-decoration-none'>
+              Download CV
+            </a>
+
+            <button className='ml-2 contactButton inlineButtons'>
+              Contact Me
+            </button>
+          </p>
+        </Container>
+      </Jumbotron>
+    </div>
   )
 }
 

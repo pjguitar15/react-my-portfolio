@@ -37,10 +37,12 @@ body {
   border-radius: 50px;
   font-size: 14px;
   transition: 0.2s;
+  text-decoration: none;
 }
 
 .downloadCv:hover {
   background: #ffa08d;
+  color: white;
 }
 
 .contactButton {
@@ -63,8 +65,7 @@ body {
   cursor: pointer;
   transition: 0.5s;
   background-color: #f7f7f7;
-  /* margin-top: 10px;
-  margin-bottom: 10px; */
+  box-shadow: 1px 1px 5px 5px #f0f0f0;
 }
 
 textarea,
@@ -98,7 +99,7 @@ textarea:focus,
   transform: scaleX(-1);
 }
 
-@media (max-width: 544px) {
+@media (max-width: 576px) {
   .myName {
     font-size: 40px;
   }
@@ -109,5 +110,14 @@ textarea:focus,
   textarea,
   .contactInput {
     width: 100%;
+  }
+  .bioImg {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .bioImg {
+    display: none;
   }
 }

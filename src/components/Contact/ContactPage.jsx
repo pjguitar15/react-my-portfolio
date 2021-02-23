@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Container } from 'react-bootstrap'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 const ContactPage = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
+  }, [])
   return (
     <div style={{ background: '#FAFAFC', padding: '5rem 0' }}>
       <h4 style={{ fontWeight: '700' }} className='text-center mb-5'>
         HAVE SOME QUESTIONS?
       </h4>
       <Container>
-        <form action='' className='text-center'>
+        <form data-aos='fade-up' action='' className='text-center'>
           <div className='contactInputDiv'>
             <input
               placeholder='Enter email'

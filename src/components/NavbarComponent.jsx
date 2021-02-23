@@ -1,11 +1,11 @@
 import React from 'react'
-import { Navbar, Nav, Button, Container } from 'react-bootstrap'
+import { Navbar, Nav } from 'react-bootstrap'
 const NavbarComponent = () => {
   return (
     <div>
       <Navbar bg='light' expand='xl' sticky='top'>
         <Navbar.Brand href='#home'>
-          <span className='logo ml-5'>Philcob</span>
+          <span className='logo'>Philcob</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
