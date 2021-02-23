@@ -1,16 +1,34 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useContext } from 'react'
 import { Container } from 'react-bootstrap'
+import {
+  CardWorksData,
+  DarkTheme,
+  LightTheme,
+  ThemeToggler,
+} from '../../GlobalState'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 const ContactPage = () => {
+  const darktheme = useContext(DarkTheme)
+  const lighttheme = useContext(LightTheme)
+  const [isDark, setIsDark] = useContext(ThemeToggler)
   useEffect(() => {
     Aos.init({ duration: 2000 })
   }, [])
   return (
-    <div id='contact' style={{ background: '#FAFAFC', padding: '5rem 0' }}>
-      <h4 style={{ fontWeight: '700' }} className='text-center mb-5'>
+    <div
+      id='contact'
+      className='contactBg'
+      style={isDark ? darktheme.light : lighttheme.light}
+    >
+      <h2
+        style={
+          isDark ? { color: darktheme.color } : { color: lighttheme.color }
+        }
+        className='contacth1 text-center mb-5'
+      >
         HAVE SOME QUESTIONS?
-      </h4>
+      </h2>
       <Container>
         <form data-aos='fade-up' action='' className='text-center'>
           <div className='contactInputDiv'>

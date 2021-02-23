@@ -1,14 +1,20 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import NavbarComponent from '../NavbarComponent'
 import logo from '../../Assets/logo.svg'
 import { Jumbotron, Container } from 'react-bootstrap'
+import { Link } from 'react-scroll'
 import pdf from '../../Assets/cv.pdf'
+import { DarkTheme, LightTheme, ThemeToggler } from '../../GlobalState'
 const Home = () => {
+  const darktheme = useContext(DarkTheme)
+  const lighttheme = useContext(LightTheme)
+  const [isDark, setIsDark] = useContext(ThemeToggler)
   return (
     <div id='home'>
       <NavbarComponent />
       <Jumbotron
-        style={{ background: '#FAFAFC', height: '100vh', width: '100%' }}
+        className='jumbotronStyle'
+        style={isDark ? darktheme.dark : lighttheme.dark}
       >
         <Container
           style={{ marginTop: '10vh' }}
@@ -22,22 +28,50 @@ const Home = () => {
               alt=''
             />
           </div>
-          <span className='myName'>Philcob Suzuki Josol</span>
+          <span
+            style={
+              isDark ? { color: darktheme.color } : { color: lighttheme.color }
+            }
+            className='myName'
+          >
+            Philcob Suzuki Josol
+          </span>
           <div className=' p-0'>
-            <p className='subtitle mt-2 p-0 text-center text-xl-left'>
-              I am an aspiring Frontend Developer that develops responsive and
-              dynamic Website using tools and frameworks which gives me more
-              flexible time management. // draft
+            <p
+              style={
+                isDark
+                  ? { color: darktheme.color }
+                  : { color: lighttheme.color }
+              }
+              className='subtitle mt-2 p-0 text-center text-xl-left'
+            >
+              I am a passionate Frontend Developer that develops websites with
+              React JS.
             </p>
           </div>
           <p className='mt-5'>
             <a href={pdf} className='downloadCv text-decoration-none'>
               Download CV
             </a>
-
-            <button className='ml-2 contactButton inlineButtons'>
-              Contact Me
-            </button>
+            <Link
+              activeClass='active'
+              to='contact'
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              <button
+                style={
+                  isDark
+                    ? { border: darktheme.border, color: darktheme.color }
+                    : { color: lighttheme.color }
+                }
+                className='ml-2 contactButton inlineButtons'
+              >
+                Contact Me
+              </button>
+            </Link>
           </p>
         </Container>
       </Jumbotron>

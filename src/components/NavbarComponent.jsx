@@ -1,13 +1,34 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Navbar, Nav } from 'react-bootstrap'
 import { Link } from 'react-scroll'
+import Switch from '@material-ui/core/Switch'
+import {
+  ThemeToggler,
+  TogglerHandler,
+  DarkTheme,
+  LightTheme,
+} from '../GlobalState'
 const NavbarComponent = () => {
+  const handleChange = useContext(TogglerHandler)
+  const [isDark, setIsDark] = useContext(ThemeToggler)
+  const darktheme = useContext(DarkTheme)
+  const lighttheme = useContext(LightTheme)
   return (
     <div>
-      <Navbar bg='light' expand='xl' fixed='top'>
-        <Navbar.Brand href='#home'>
-          <span className='logo'>Philcob</span>
-        </Navbar.Brand>
+      <Navbar expand='xl' fixed='top'>
+        <Link
+          activeClass='active'
+          to='home'
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+        >
+          <Navbar.Brand>
+            <span className='logo'>Philcob</span>
+          </Navbar.Brand>
+        </Link>
+
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='text-center rounded mainNav'>
@@ -19,7 +40,16 @@ const NavbarComponent = () => {
               offset={0}
               duration={500}
             >
-              <Nav.Link className='navLink mx-4'>Home</Nav.Link>
+              <Nav.Link
+                style={
+                  isDark
+                    ? { color: darktheme.color }
+                    : { color: lighttheme.color }
+                }
+                className='navLink mx-4'
+              >
+                Home
+              </Nav.Link>
             </Link>
 
             <Link
@@ -30,7 +60,16 @@ const NavbarComponent = () => {
               offset={0}
               duration={500}
             >
-              <Nav.Link className='navLink mx-4'>About</Nav.Link>
+              <Nav.Link
+                style={
+                  isDark
+                    ? { color: darktheme.color }
+                    : { color: lighttheme.color }
+                }
+                className='navLink mx-4'
+              >
+                About
+              </Nav.Link>
             </Link>
 
             <Link
@@ -41,7 +80,16 @@ const NavbarComponent = () => {
               offset={0}
               duration={500}
             >
-              <Nav.Link className='navLink mx-4'>Skill</Nav.Link>
+              <Nav.Link
+                style={
+                  isDark
+                    ? { color: darktheme.color }
+                    : { color: lighttheme.color }
+                }
+                className='navLink mx-4'
+              >
+                Skill
+              </Nav.Link>
             </Link>
 
             <Link
@@ -52,20 +100,27 @@ const NavbarComponent = () => {
               offset={0}
               duration={500}
             >
-              <Nav.Link className='navLink mx-4'>Contact</Nav.Link>
+              <Nav.Link
+                style={
+                  isDark
+                    ? { color: darktheme.color }
+                    : { color: lighttheme.color }
+                }
+                className='navLink mx-4'
+              >
+                Contact
+              </Nav.Link>
             </Link>
-            {/* <Link
-              activeClass='active'
-              to='test'
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-            > */}
-            {/* <Nav.Link className='text-dark navLink mx-4'>Journey</Nav.Link> */}
-            {/* </Link> */}
           </Nav>
         </Navbar.Collapse>
+        <div className='d-none d-md-block'>
+          <Switch
+            checked={isDark}
+            onChange={handleChange}
+            name='checkedA'
+            inputProps={{ 'aria-label': 'secondary checkbox' }}
+          />
+        </div>
       </Navbar>
     </div>
   )

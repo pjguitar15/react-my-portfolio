@@ -10,10 +10,7 @@ const Footer = () => {
         <MDBRow>
           <MDBCol md='6'>
             <h5 className='title'>Footer Content</h5>
-            <p>
-              Here you can use rows and columns here to organize your footer
-              content.
-            </p>
+            <p>Designed and Developed by Philcob Suzuki Josol</p>
           </MDBCol>
           <MDBCol md='6'>
             <h5 className='title'>Links</h5>
@@ -50,7 +47,7 @@ const Footer = () => {
       <div className='footer-copyright text-center py-3'>
         <MDBContainer fluid>
           &copy; {new Date().getFullYear()} Copyright:{' '}
-          <a href='https://www.mdbootstrap.com'> MDBootstrap.com </a>
+          <span>Philcob Suzuki Josol</span>
         </MDBContainer>
       </div>
     </MDBFooter>
