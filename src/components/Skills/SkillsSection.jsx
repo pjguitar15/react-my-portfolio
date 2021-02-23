@@ -10,10 +10,31 @@ const SkillsSection = () => {
   const cartData = useContext(CardWorksData)
   return (
     <div
+      id='skills'
       className='px-md-5'
       style={{ background: '#FAFAFC', padding: '4rem 0 7rem 0' }}
     >
       <h3 className='text-center mb-5'>Skills</h3>
+      <Container>
+        <CardDeck>
+          {cartData.map((item) => (
+            <div
+              data-aos='fade-up'
+              key={item.id}
+              className='col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4'
+            >
+              <Card className='skillCard' style={{ width: '100%' }}>
+                <Card.Img variant='top' src={item.image} />
+                <Card.Body>
+                  <Card.Title>{item.title}</Card.Title>
+                  <Card.Text>{item.text}</Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+          ))}
+        </CardDeck>
+      </Container>
+      <h3 className='text-center mb-5 mt-5'>Related Skills</h3>
       <Container>
         <CardDeck>
           {cartData.map((item) => (

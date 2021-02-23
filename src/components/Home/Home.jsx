@@ -1,12 +1,11 @@
 import React from 'react'
-import { Spring } from 'react-spring/renderprops'
 import NavbarComponent from '../NavbarComponent'
 import logo from '../../Assets/logo.svg'
 import { Jumbotron, Container } from 'react-bootstrap'
 import pdf from '../../Assets/cv.pdf'
 const Home = () => {
   return (
-    <div>
+    <div id='home'>
       <NavbarComponent />
       <Jumbotron
         style={{ background: '#FAFAFC', height: '100vh', width: '100%' }}

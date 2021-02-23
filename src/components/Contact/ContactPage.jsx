@@ -7,7 +7,7 @@ const ContactPage = () => {
     Aos.init({ duration: 2000 })
   }, [])
   return (
-    <div style={{ background: '#FAFAFC', padding: '5rem 0' }}>
+    <div id='contact' style={{ background: '#FAFAFC', padding: '5rem 0' }}>
       <h4 style={{ fontWeight: '700' }} className='text-center mb-5'>
         HAVE SOME QUESTIONS?
       </h4>

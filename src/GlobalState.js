@@ -10,8 +10,7 @@ const GlobalState = ({ children }) => {
       title: 'HTML & CSS',
       image:
         'https://codescandy.com/geeks/assets/images/course-css.jpg',
-      text: 'CSS or Cascading Stylesheet that builds up the content of the whole webpage.',
-      position: `alignAlign: 'right'`
+      text: 'CSS or Cascading Stylesheet that builds up the content of the whole webpage.'
     },
     {
       id: 2,
@@ -58,17 +57,7 @@ const GlobalState = ({ children }) => {
     },
     {
       id: 5,
-      title: 'Travel',
-      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia sint ad, perferendis quidem sed facere, eum placeat deleniti eius doloremque ut ipsum nesciunt odit eveniet atque laborum aut molestias mollitia!'
-    },
-    {
-      id: 6,
       title: 'Food',
-      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia sint ad, perferendis quidem sed facere, eum placeat deleniti eius doloremque ut ipsum nesciunt odit eveniet atque laborum aut molestias mollitia!'
-    },
-    {
-      id: 7,
-      title: 'Nationality',
       description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia sint ad, perferendis quidem sed facere, eum placeat deleniti eius doloremque ut ipsum nesciunt odit eveniet atque laborum aut molestias mollitia!'
     }
   ]
