@@ -36,25 +36,27 @@ const ContactPage = () => {
           method='post'
           className='text-center'
         >
+          <input type='hidden' name='form-name' value='contact' />
           <div className='contactInputDiv'>
-            <input type='hidden' name='form-name' value='contact' />
             <input
-              placeholder='Enter email'
+              placeholder='Enter name'
               className='contactInput my-2 shadow-sm'
               type='text'
+              name='name'
             />
           </div>
           <div className='contactInputDiv'>
             <input
-              placeholder='Enter your contact number'
+              placeholder='Enter email'
               className='contactInput my-2 shadow-sm'
+              name='email'
               type='text'
             />
           </div>
           <div>
             <textarea
               className='shadow-sm my-2'
-              name=''
+              name='message'
               id=''
               cols='30'
               rows='10'
