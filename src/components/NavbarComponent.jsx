@@ -15,7 +15,11 @@ const NavbarComponent = () => {
   const lighttheme = useContext(LightTheme)
   return (
     <div>
-      <Navbar expand='xl' fixed='top'>
+      <Navbar
+        style={isDark ? darktheme.dark : lighttheme.dark}
+        expand='xl'
+        fixed='top'
+      >
         <Link
           activeClass='active'
           to='home'

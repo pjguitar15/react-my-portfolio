@@ -30,7 +30,7 @@ const ContactPage = () => {
         HAVE SOME QUESTIONS?
       </h2>
       <Container>
-        <form data-aos='fade-up' action='' className='text-center'>
+        {/* <form data-aos='fade-up' action='' className='text-center'>
           <div className='contactInputDiv'>
             <input
               placeholder='Enter email'
@@ -56,6 +56,36 @@ const ContactPage = () => {
             ></textarea>
           </div>
           <button className='mt-3 btn btn-info col-10'>Submit</button>
+        </form> */}
+
+        <form name='contact' method='POST' data-netlify='true'>
+          <p>
+            <label>
+              Your Name: <input type='text' name='name' />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your Email: <input type='email' name='email' />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your Role:{' '}
+              <select name='role[]' multiple>
+                <option value='leader'>Leader</option>
+                <option value='follower'>Follower</option>
+              </select>
+            </label>
+          </p>
+          <p>
+            <label>
+              Message: <textarea name='message'></textarea>
+            </label>
+          </p>
+          <p>
+            <button type='submit'>Send</button>
+          </p>
         </form>
       </Container>
     </div>
