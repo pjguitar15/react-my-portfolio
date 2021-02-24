@@ -45,8 +45,7 @@ const Home = () => {
               }
               className='subtitle mt-2 p-0 text-center text-xl-left'
             >
-              I am a passionate Frontend Developer that develops websites with
-              React JS.
+              I am a Frontend Developer that develops websites with React JS.
             </p>
           </div>
           <p className='mt-5'>

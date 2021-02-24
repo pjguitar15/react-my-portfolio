@@ -24,7 +24,7 @@ const BioPage = () => {
         }
         className='text-center mb-5 aboutH1'
       >
-        About Me
+        {'<'}AboutMe{' />'}
       </h1>
       <div
         style={isDark ? darktheme.light : lighttheme.light}

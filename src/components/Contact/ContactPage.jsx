@@ -63,32 +63,14 @@ const ContactPage = () => {
               placeholder='Enter your message'
             ></textarea>
           </div>
-          <button type='submit' className='mt-3 btn btn-info col-10'>
+          <button
+            style={{ backgroundColor: '#F26C50', border: 'none' }}
+            type='submit'
+            className='mt-3 btn btn-info col-10'
+          >
             Submit
           </button>
         </form>
-
-        {/* <form name='contact' method='post'>
-          <input type='hidden' name='form-name' value='contact' />
-          <p>
-            <label>
-              Your Name: <input type='text' name='name' />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your Email: <input type='email' name='email' />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message: <textarea name='message'></textarea>
-            </label>
-          </p>
-          <p>
-            <button type='submit'>Send</button>
-          </p>
-        </form> */}
       </Container>
     </div>
   )

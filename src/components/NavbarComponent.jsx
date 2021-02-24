@@ -32,7 +32,6 @@ const NavbarComponent = () => {
             <span className='logo'>Philcob</span>
           </Navbar.Brand>
         </Link>
-
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='text-center rounded mainNav'>
@@ -136,6 +135,13 @@ const NavbarComponent = () => {
             </Link>
           </Nav>
         </Navbar.Collapse>
+        <h6
+          style={
+            isDark ? { color: darktheme.color } : { color: lighttheme.color }
+          }
+        >
+          {isDark ? 'Dark theme' : 'Light theme'}
+        </h6>
         <div className='d-none d-md-block'>
           <Switch
             checked={isDark}
