@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { Navbar, Nav } from 'react-bootstrap'
 import { Link } from 'react-scroll'
 import Switch from '@material-ui/core/Switch'
+import logo from '../Assets/favicon.png'
 import {
   ThemeToggler,
   TogglerHandler,
@@ -28,8 +29,8 @@ const NavbarComponent = () => {
           offset={0}
           duration={500}
         >
-          <Navbar.Brand>
-            <span className='logo'>Philcob</span>
+          <Navbar.Brand className='col-5 p-0 mx-auto'>
+            <img style={{ height: '100%', width: '100%' }} src={logo} />
           </Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
