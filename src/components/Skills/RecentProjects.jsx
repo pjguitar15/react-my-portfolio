@@ -54,7 +54,12 @@ const RecentProjects = () => {
               ))}
 
               <Card.Title className='mt-3'>Guitar E-Commerce</Card.Title>
-              <Card.Text>This is my first completed React project! </Card.Text>
+              <Card.Text>
+                Doing this project made me learn a lot about how to properly
+                manage components and states. Because I had to use multiple
+                state and datas running through the program, I used useContext
+                hook and Global State file to store all my datas.
+              </Card.Text>
               <Button
                 href='https://philcobguitarshop.netlify.app/'
                 target='_blank'
@@ -96,8 +101,11 @@ const RecentProjects = () => {
 
               <Card.Title className='mt-3'>Todo-list App</Card.Title>
               <Card.Text>
-                One of my early react projects. I use React hooks on my React
-                applications.
+                Yes, the basics. Todo list has always been thought as the first
+                steps in learning React {'('}
+                set aside counter app{')'} 😂. This was one of my early react
+                projects which taught me all about basics, syntax, and
+                understanding the concept of State and Lifecycle.
               </Card.Text>
               <Button
                 href='https://philcobguitarshop.netlify.app/'
