@@ -30,8 +30,14 @@ const ContactPage = () => {
         HAVE SOME QUESTIONS?
       </h2>
       <Container>
-        {/* <form data-aos='fade-up' action='' className='text-center'>
+        <form
+          data-aos='fade-up'
+          name='contact'
+          method='post'
+          className='text-center'
+        >
           <div className='contactInputDiv'>
+            <input type='hidden' name='form-name' value='contact' />
             <input
               placeholder='Enter email'
               className='contactInput my-2 shadow-sm'
@@ -55,10 +61,12 @@ const ContactPage = () => {
               placeholder='Enter your message'
             ></textarea>
           </div>
-          <button className='mt-3 btn btn-info col-10'>Submit</button>
-        </form> */}
+          <button type='submit' className='mt-3 btn btn-info col-10'>
+            Submit
+          </button>
+        </form>
 
-        <form name='contact' method='post'>
+        {/* <form name='contact' method='post'>
           <input type='hidden' name='form-name' value='contact' />
           <p>
             <label>
@@ -78,7 +86,7 @@ const ContactPage = () => {
           <p>
             <button type='submit'>Send</button>
           </p>
-        </form>
+        </form> */}
       </Container>
     </div>
   )
