@@ -55,6 +55,25 @@ const NavbarComponent = () => {
                 Home
               </Nav.Link>
             </Link>
+            <Link
+              activeClass='active'
+              to='projects'
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              <Nav.Link
+                style={
+                  isDark
+                    ? { color: darktheme.color }
+                    : { color: lighttheme.color }
+                }
+                className='navLink mx-4'
+              >
+                Projects
+              </Nav.Link>
+            </Link>
 
             <Link
               activeClass='active'

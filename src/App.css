@@ -137,6 +137,10 @@ textarea:focus,
   padding-top: 100px;
 }
 
+.projects {
+  height: 100vh;
+}
+
 @media (max-width: 576px) {
   .myName {
     font-size: 40px;

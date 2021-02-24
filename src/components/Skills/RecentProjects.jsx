@@ -17,7 +17,7 @@ const RecentProjects = () => {
   return (
     <div
       id='projects'
-      className='px-md-5 skillsMainDiv'
+      className='projects px-md-5 skillsMainDiv'
       style={isDark ? darktheme.light : lighttheme.light}
     >
       <h3

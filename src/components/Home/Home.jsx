@@ -14,7 +14,7 @@ const Home = () => {
       <NavbarComponent />
       <Jumbotron
         className='jumbotronStyle'
-        style={isDark ? darktheme.dark : lighttheme.dark}
+        style={isDark ? darktheme.light : lighttheme.light}
       >
         <Container
           style={{ marginTop: '10vh' }}

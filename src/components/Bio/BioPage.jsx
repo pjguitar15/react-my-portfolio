@@ -15,7 +15,7 @@ const BioPage = () => {
     <div
       id='about'
       className='py-5'
-      style={isDark ? darktheme.light : lighttheme.light}
+      style={isDark ? darktheme.dark : lighttheme.dark}
     >
       <h1
         data-aos='fade-up'
@@ -27,7 +27,7 @@ const BioPage = () => {
         About Me
       </h1>
       <div
-        style={isDark ? darktheme.dark : lighttheme.dark}
+        style={isDark ? darktheme.light : lighttheme.light}
         className='container shadow py-5 rounded'
       >
         <div className='aboutMeImg'>
