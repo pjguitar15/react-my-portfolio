@@ -49,15 +49,64 @@ const BioPage = () => {
                     : { color: lighttheme.color }
                 }
               >
-                {item.title}
+                {item.title === 'Programming' && (
+                  <div
+                    style={{
+                      display: 'flex',
+                      justifyContent: 'center',
+                      flexDirection: 'column',
+                    }}
+                  >
+                    <i
+                      style={{ fontSize: '50px', marginBottom: '20px' }}
+                      class='fas fa-code'
+                    ></i>
+                    <div>{item.title}</div>
+                  </div>
+                )}
+                {item.title === 'Music' && (
+                  <div
+                    style={{
+                      display: 'flex',
+                      justifyContent: 'center',
+                      flexDirection: 'column',
+                    }}
+                  >
+                    <i
+                      class='fas fa-music'
+                      style={{ fontSize: '50px', marginBottom: '20px' }}
+                    ></i>
+
+                    <div>{item.title}</div>
+                  </div>
+                )}
+                {item.title === 'Sports' && (
+                  <div
+                    style={{
+                      display: 'flex',
+                      justifyContent: 'center',
+                      flexDirection: 'column',
+                    }}
+                  >
+                    <i
+                      class='fas fa-table-tennis'
+                      style={{ fontSize: '50px', marginBottom: '20px' }}
+                    ></i>
+
+                    <div>{item.title}</div>
+                  </div>
+                )}
               </h2>
-              <hr
-                style={
-                  isDark
-                    ? { border: 'solid white 0.1px' }
-                    : { border: 'solid black 0.1px' }
-                }
-              />
+              {item.title !== 'Hello, World' && (
+                <hr
+                  style={
+                    isDark
+                      ? { border: 'solid white 0.1px' }
+                      : { border: 'solid black 0.1px' }
+                  }
+                />
+              )}
+
               <p
                 className='lead aboutMeP'
                 style={

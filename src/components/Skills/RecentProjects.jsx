@@ -28,7 +28,7 @@ const RecentProjects = () => {
         <CardDeck key={index}>
           <div
             data-aos='fade-up'
-            className='col-sm-12 col-md-6 col-lg-4 col-xl-6 mx-auto my-4'
+            className='col-sm-12 col-md-6 col-lg-10 col-xl-6 mx-auto my-4'
           >
             <Card style={{ width: '100%' }}>
               <Card.Img variant='top' src={item.image} />

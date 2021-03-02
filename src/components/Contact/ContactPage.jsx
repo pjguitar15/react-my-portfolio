@@ -27,7 +27,13 @@ const ContactPage = () => {
         }
         className='contacth1 text-center mb-5'
       >
-        HAVE SOME QUESTIONS?
+        <div className='d-flex justify-content-around flex-column'>
+          <i
+            style={{ fontSize: '70px', marginBottom: '30px' }}
+            class='fas fa-question-circle'
+          ></i>{' '}
+          <div>HAVE SOME QUESTIONS?</div>
+        </div>
       </h2>
       <Container>
         <form

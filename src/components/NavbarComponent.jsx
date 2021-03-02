@@ -154,13 +154,14 @@ const NavbarComponent = () => {
           </Nav>
         </Navbar.Collapse>
         <h6
+          className='d-none d-md-block'
           style={
             isDark ? { color: darktheme.color } : { color: lighttheme.color }
           }
         >
           {isDark ? 'Dark theme' : 'Light theme'}
         </h6>
-        <div className='d-none d-md-block'>
+        <div>
           <Switch
             checked={isDark}
             onChange={handleChange}
