@@ -42,10 +42,9 @@ const SkillsSection = () => {
               <Card className='skillCard' style={{ width: '100%' }}>
                 <Card.Img variant='top' src={item.image} />
                 <Card.Body>
-                  <Card.Title>{item.title}</Card.Title>
-
-                  <Card.Title>{item.name}</Card.Title>
-                  <Card.Text>{item.text}</Card.Text>
+                  <Card.Title style={{ textAlign: 'center' }}>
+                    {item.title}
+                  </Card.Title>
                 </Card.Body>
               </Card>
             </div>

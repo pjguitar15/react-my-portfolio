@@ -31,6 +31,8 @@ body {
 .logo:hover {
   background-color: white;
   color: #f26c50;
+}
+.logoImg:hover {
   cursor: pointer;
   transition: 0.6s;
 }
@@ -135,10 +137,12 @@ textarea:focus,
 .contactBg {
   height: 100vh;
   padding-top: 100px;
+  margin-bottom: -25px;
 }
 
 .projects {
   padding: 100px 0px;
+  margin-top: -35px;
 }
 
 @media (max-width: 576px) {

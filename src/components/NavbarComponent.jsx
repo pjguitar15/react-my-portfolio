@@ -30,7 +30,11 @@ const NavbarComponent = () => {
           duration={500}
         >
           <Navbar.Brand className='col-5 p-0 mx-auto'>
-            <img style={{ height: '100%', width: '100%' }} src={logo} />
+            <img
+              className='logoImg'
+              style={{ height: '100%', width: '100%' }}
+              src={logo}
+            />
           </Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
@@ -52,6 +56,10 @@ const NavbarComponent = () => {
                 }
                 className='navLink mx-4'
               >
+                <i
+                  style={{ fontSize: '19px', marginRight: '8px' }}
+                  class='fa fa-home'
+                ></i>
                 Home
               </Nav.Link>
             </Link>
@@ -71,6 +79,10 @@ const NavbarComponent = () => {
                 }
                 className='navLink mx-4'
               >
+                <i
+                  style={{ fontSize: '15px', marginRight: '8px' }}
+                  class='fas fa-laptop-code'
+                ></i>
                 Projects
               </Nav.Link>
             </Link>
@@ -91,6 +103,7 @@ const NavbarComponent = () => {
                 }
                 className='navLink mx-4'
               >
+                <i style={{ marginRight: '8px' }} class='fas fa-user'></i>
                 About
               </Nav.Link>
             </Link>
@@ -111,7 +124,7 @@ const NavbarComponent = () => {
                 }
                 className='navLink mx-4'
               >
-                Skill
+                <i class='fas fa-code'></i> Skill
               </Nav.Link>
             </Link>
 
@@ -131,6 +144,10 @@ const NavbarComponent = () => {
                 }
                 className='navLink mx-4'
               >
+                <i
+                  style={{ fontSize: '15px', marginRight: '8px' }}
+                  class='fas fa-mobile'
+                ></i>
                 Contact
               </Nav.Link>
             </Link>

@@ -50,6 +50,7 @@ const Home = () => {
           </div>
           <p className='mt-5'>
             <a href={pdf} className='downloadCv text-decoration-none'>
+              <i style={{ marginRight: '8px' }} class='fas fa-download'></i>
               Download CV
             </a>
             <Link
@@ -68,6 +69,10 @@ const Home = () => {
                 }
                 className='ml-2 contactButton inlineButtons'
               >
+                <i
+                  style={{ fontSize: '15px', marginRight: '8px' }}
+                  class='fas fa-mobile'
+                ></i>
                 Contact Me
               </button>
             </Link>
