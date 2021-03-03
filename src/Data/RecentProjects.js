@@ -4,6 +4,7 @@ import todolist from '../Assets/todolist.JPG'
 import cookie from '../Assets/cookie.JPG'
 import ColorPalleteApp from '../Assets/color-pallete-app.JPG'
 import RandomNumberApp from '../Assets/random-number-app.JPG'
+import photogallery from '../Assets/photogallery.JPG'
 
 const RecentProjectsData = [
   {
@@ -60,6 +61,15 @@ const RecentProjectsData = [
     tags: ['HTML', 'CSS', 'Javascript', 'Bootstrap'],
     link: 'https://philcobexpensecalculator.netlify.app/',
     github: 'https://github.com/pjguitar15/expense-calculator'
+  },
+  {
+    id: 7,
+    title: 'Cat Photo Gallery',
+    text: 'A very simple photo gallery that allows to preview photos from the gallery.',
+    image: photogallery,
+    tags: ['React', 'CSS', 'Boostrap'],
+    link: 'https://cranky-wescoff-bef91e.netlify.app/',
+    github: 'https://github.com/pjguitar15/react-photo-gallery'
   },
 ]
 

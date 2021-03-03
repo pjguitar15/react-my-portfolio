@@ -49,7 +49,11 @@ const Home = () => {
             </p>
           </div>
           <p className='mt-5'>
-            <a href={pdf} className='downloadCv text-decoration-none'>
+            <a
+              target='_blank'
+              href={pdf}
+              className='downloadCv text-decoration-none'
+            >
               <i style={{ marginRight: '8px' }} class='fas fa-download'></i>
               Download CV
             </a>
