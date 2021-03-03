@@ -3,7 +3,7 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from 'mdbreact'
 const Footer = () => {
   return (
     <MDBFooter
-      className='font-small pt-4 mt-4 text-light'
+      className='font-small py-4 mt-5 text-light'
       style={{ background: '#F26C50' }}
     >
       <MDBContainer fluid className='text-center'>
@@ -12,14 +12,14 @@ const Footer = () => {
           <p>Designed and Developed by Philcob Suzuki Josol</p>
         </MDBCol>
         <MDBCol md='6' className='mx-auto'>
-          <ul className='d-flex mt-5 justify-content-around'>
+          <ul className='d-flex mt-5 justify-content-around flex-wrap'>
             <li className='list-unstyled'>
               <a
                 className='text-light'
                 target='_blank'
                 href='https://github.com/pjguitar15'
               >
-                <i class='fab fa-github mr-2'></i>Github
+                <i class='fab fa-github mx-2 mr-2'></i>Github
               </a>
             </li>
             <li className='list-unstyled'>
@@ -37,7 +37,7 @@ const Footer = () => {
                 target='_blank'
                 href='https://www.instagram.com/philcobsuzuki/'
               >
-                <i class='fab fa-instagram mr-2'></i>Instagram
+                <i class='fab fa-instagram mx-2 mr-2'></i>Instagram
               </a>
             </li>
             <li className='list-unstyled'>

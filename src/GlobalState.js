@@ -43,23 +43,13 @@ const GlobalState = ({ children }) => {
     {
       id: 1,
       title: 'Hello, World',
-      description: `I'm Philcob. 22 years old from Trece Martires City, Cavite, Philippines. I am passionate about making great websites. But I have some several interests that you also may wanna know about.`
+      description: `I'm Philcob, a Front End Developer, 22 years old from Trece Martires City, Cavite, Philippines.`
     },
     {
       id: 4,
       title: 'Programming',
       description: 'When I first created my Hello World application, it was the moment when I immediately realized my love for development. The first language I learned was C++ at school and before that, I didnt know anything about programming. Since then, I have developed my passion. Years went by, I realize that my path was to become a Front End Developer and started to love React'
-    },
-    {
-      id: 2,
-      title: 'Music',
-      description: 'I have always loved music ever since when I was a kid. In fact, I also play instruments like guitar, keyboard, and drums. '
-    },
-    {
-      id: 3,
-      title: 'Sports',
-      description: 'I used to play sports competitively in school. One of my favorite sports that I play is Table tennis. I also play basketball and volleyball.'
-    },
+    }
   ]
 
   const darktheme = {

@@ -19,7 +19,7 @@ const ContactPage = () => {
     <div
       id='contact'
       className='contactBg'
-      style={isDark ? darktheme.light : lighttheme.light}
+      style={isDark ? darktheme.dark : lighttheme.dark}
     >
       <h2
         style={
@@ -28,10 +28,6 @@ const ContactPage = () => {
         className='contacth1 text-center mb-5'
       >
         <div className='d-flex justify-content-around flex-column'>
-          <i
-            style={{ fontSize: '70px', marginBottom: '30px' }}
-            class='fas fa-question-circle'
-          ></i>{' '}
           <div>HAVE SOME QUESTIONS?</div>
         </div>
       </h2>
@@ -72,7 +68,7 @@ const ContactPage = () => {
           <button
             style={{ backgroundColor: '#F26C50', border: 'none' }}
             type='submit'
-            className='mt-3 btn btn-info col-10'
+            className='mt-3 btn btn-info col-10 mb-5'
           >
             Submit
           </button>

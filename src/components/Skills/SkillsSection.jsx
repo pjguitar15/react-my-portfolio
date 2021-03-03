@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react'
-import { Card, CardDeck, Container } from 'react-bootstrap'
+import { Row, Col, Container } from 'react-bootstrap'
 import {
   CardWorksData,
   DarkTheme,
@@ -27,29 +27,68 @@ const SkillsSection = () => {
         style={
           isDark ? { color: darktheme.color } : { color: lighttheme.color }
         }
-        className='text-center mb-5'
+        className='text-center skillh3 mb-5'
       >
         Skills
       </h3>
-      <Container>
-        <CardDeck>
-          {cartData.map((item) => (
-            <div
-              data-aos='fade-up'
-              key={item.id}
-              className='col-sm-12 col-md-6 col-lg-4 col-xl-3 my-4'
-            >
-              <Card className='skillCard' style={{ width: '100%' }}>
-                <Card.Img variant='top' src={item.image} />
-                <Card.Body>
-                  <Card.Title style={{ textAlign: 'center' }}>
-                    {item.title}
-                  </Card.Title>
-                </Card.Body>
-              </Card>
+      <Container className='mb-5 containerSkill'>
+        <Row
+          data-aos='fade-up'
+          style={
+            isDark ? { color: darktheme.color } : { color: lighttheme.color }
+          }
+        >
+          <Col lg='2' className='mx-auto'>
+            <div className='text-center my-5'>
+              <i
+                class='fab fa-html5'
+                style={{ fontSize: '6rem', color: '#E96228' }}
+              ></i>
+              <h4 style={{ fontWeight: '500' }}>HTML</h4>
+              <p>Pretty comfortable</p>
             </div>
-          ))}
-        </CardDeck>
+          </Col>
+          <Col lg='2' className='mx-auto'>
+            <div className='text-center my-5'>
+              <i
+                style={{ fontSize: '6rem', color: '#2965F1' }}
+                class='fab fa-css3-alt'
+              ></i>
+              <h4 style={{ fontWeight: '500' }}>CSS</h4>
+              <p>Want some style</p>
+            </div>
+          </Col>
+          <Col lg='2' className='mx-auto'>
+            <div className='text-center my-5'>
+              <i
+                style={{ fontSize: '6rem', color: '#F7DF1E' }}
+                class='fab fa-js'
+              ></i>
+              <h4 style={{ fontWeight: '500' }}>Javascript</h4>
+              <p>Listen to events</p>
+            </div>
+          </Col>
+          <Col lg='2' className='mx-auto'>
+            <div className='text-center my-5'>
+              <i
+                style={{ fontSize: '6rem', color: '#5ED3F3' }}
+                class='fab fa-react'
+              ></i>
+              <h4 style={{ fontWeight: '500' }}>React</h4>
+              <p>Javascript Library</p>
+            </div>
+          </Col>
+          <Col lg='2' className='mx-auto'>
+            <div className='text-center my-5'>
+              <i
+                style={{ fontSize: '6rem', color: '#6FB352' }}
+                class='fab fa-node'
+              ></i>
+              <h4 style={{ fontWeight: '500' }}>Node JS</h4>
+              <p>Servers/Backend</p>
+            </div>
+          </Col>
+        </Row>
       </Container>
     </div>
   )

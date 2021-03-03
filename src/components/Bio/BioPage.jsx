@@ -14,21 +14,15 @@ const BioPage = () => {
   return (
     <div
       id='about'
-      className='py-5'
+      className='py-5 '
       style={isDark ? darktheme.dark : lighttheme.dark}
     >
-      <h1
-        data-aos='fade-up'
-        style={
-          isDark ? { color: darktheme.color } : { color: lighttheme.color }
-        }
-        className='text-center mb-5 aboutH1'
-      >
+      <h1 data-aos='fade-up' className='text-center mb-5 aboutH1'>
         {'<'}AboutMe{' />'}
       </h1>
       <div
         style={isDark ? darktheme.light : lighttheme.light}
-        className='container shadow py-5 rounded'
+        className='container aboutMePaper shadow py-5 rounded'
       >
         <div className='aboutMeImg'>
           <img

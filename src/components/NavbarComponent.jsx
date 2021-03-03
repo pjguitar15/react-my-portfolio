@@ -68,7 +68,7 @@ const NavbarComponent = () => {
               to='projects'
               spy={true}
               smooth={true}
-              offset={0}
+              offset={70}
               duration={500}
             >
               <Nav.Link
@@ -92,7 +92,7 @@ const NavbarComponent = () => {
               to='about'
               spy={true}
               smooth={true}
-              offset={0}
+              offset={100}
               duration={500}
             >
               <Nav.Link
@@ -113,7 +113,7 @@ const NavbarComponent = () => {
               to='skills'
               spy={true}
               smooth={true}
-              offset={0}
+              offset={130}
               duration={500}
             >
               <Nav.Link
