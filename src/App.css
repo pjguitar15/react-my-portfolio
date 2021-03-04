@@ -182,17 +182,11 @@ textarea:focus,
     font-size: 18px;
     text-align: justify;
   }
-  textarea,
+  /* textarea,
   .contactInput {
     width: 100%;
-  }
-  .bioImg {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .bioImg {
-    display: none;
+  } */
+  textarea {
+    height: 10rem;
   }
 }

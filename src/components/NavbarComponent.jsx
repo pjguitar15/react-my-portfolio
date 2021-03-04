@@ -11,9 +11,10 @@ import {
 } from '../GlobalState'
 const NavbarComponent = () => {
   const handleChange = useContext(TogglerHandler)
-  const [isDark, setIsDark] = useContext(ThemeToggler)
+  const [isDark] = useContext(ThemeToggler)
   const darktheme = useContext(DarkTheme)
   const lighttheme = useContext(LightTheme)
+
   return (
     <div>
       <Navbar
@@ -58,7 +59,7 @@ const NavbarComponent = () => {
               >
                 <i
                   style={{ fontSize: '19px', marginRight: '8px' }}
-                  class='fa fa-home'
+                  className='fa fa-home'
                 ></i>
                 Home
               </Nav.Link>
@@ -81,7 +82,7 @@ const NavbarComponent = () => {
               >
                 <i
                   style={{ fontSize: '15px', marginRight: '8px' }}
-                  class='fas fa-laptop-code'
+                  className='fas fa-laptop-code'
                 ></i>
                 Projects
               </Nav.Link>
@@ -103,7 +104,7 @@ const NavbarComponent = () => {
                 }
                 className='navLink mx-4'
               >
-                <i style={{ marginRight: '8px' }} class='fas fa-user'></i>
+                <i style={{ marginRight: '8px' }} className='fas fa-user'></i>
                 About
               </Nav.Link>
             </Link>
@@ -124,7 +125,7 @@ const NavbarComponent = () => {
                 }
                 className='navLink mx-4'
               >
-                <i class='fas fa-code'></i> Skill
+                <i className='fas fa-code'></i> Skill
               </Nav.Link>
             </Link>
 
@@ -146,7 +147,7 @@ const NavbarComponent = () => {
               >
                 <i
                   style={{ fontSize: '15px', marginRight: '8px' }}
-                  class='fas fa-mobile'
+                  className='fas fa-mobile'
                 ></i>
                 Contact
               </Nav.Link>

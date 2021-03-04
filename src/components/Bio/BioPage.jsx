@@ -53,7 +53,7 @@ const BioPage = () => {
                   >
                     <i
                       style={{ fontSize: '50px', marginBottom: '20px' }}
-                      class='fas fa-code'
+                      className='fas fa-code'
                     ></i>
                     <div>{item.title}</div>
                   </div>
@@ -67,7 +67,7 @@ const BioPage = () => {
                     }}
                   >
                     <i
-                      class='fas fa-music'
+                      className='fas fa-music'
                       style={{ fontSize: '50px', marginBottom: '20px' }}
                     ></i>
 
@@ -83,7 +83,7 @@ const BioPage = () => {
                     }}
                   >
                     <i
-                      class='fas fa-table-tennis'
+                      className='fas fa-table-tennis'
                       style={{ fontSize: '50px', marginBottom: '20px' }}
                     ></i>
 

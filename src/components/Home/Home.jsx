@@ -45,7 +45,8 @@ const Home = () => {
               }
               className='subtitle mt-2 p-0 text-center text-xl-left'
             >
-              I am a Frontend Developer that develops websites with React JS.
+              I am a Frontend Developer based in Cavite. Feel free to look
+              around!
             </p>
           </div>
           <p className='mt-5'>
@@ -54,7 +55,7 @@ const Home = () => {
               href={pdf}
               className='downloadCv text-decoration-none'
             >
-              <i style={{ marginRight: '8px' }} class='fas fa-download'></i>
+              <i style={{ marginRight: '8px' }} className='fas fa-download'></i>
               Download CV
             </a>
             <Link
@@ -75,7 +76,7 @@ const Home = () => {
               >
                 <i
                   style={{ fontSize: '15px', marginRight: '8px' }}
-                  class='fas fa-mobile'
+                  className='fas fa-mobile'
                 ></i>
                 Contact Me
               </button>

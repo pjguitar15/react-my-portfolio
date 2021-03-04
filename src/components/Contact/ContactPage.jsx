@@ -66,9 +66,12 @@ const ContactPage = () => {
             ></textarea>
           </div>
           <button
-            style={{ backgroundColor: '#F26C50', border: 'none' }}
+            style={{
+              backgroundColor: '#F26C50',
+              border: 'none',
+            }}
             type='submit'
-            className='mt-3 btn btn-info col-10 mb-5'
+            className='mt-3 btn btn-info col-10'
           >
             Submit
           </button>

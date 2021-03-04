@@ -38,51 +38,51 @@ const SkillsSection = () => {
             isDark ? { color: darktheme.color } : { color: lighttheme.color }
           }
         >
-          <Col lg='2' className='mx-auto'>
+          <Col lg='2' md='4' sm='4' xs='12' className='mx-auto'>
             <div className='text-center my-5'>
               <i
-                class='fab fa-html5'
+                className='fab fa-html5'
                 style={{ fontSize: '6rem', color: '#E96228' }}
               ></i>
               <h4 style={{ fontWeight: '500' }}>HTML</h4>
               <p>Pretty comfortable</p>
             </div>
           </Col>
-          <Col lg='2' className='mx-auto'>
+          <Col lg='2' md='4' sm='4' xs='12' className='mx-auto'>
             <div className='text-center my-5'>
               <i
                 style={{ fontSize: '6rem', color: '#2965F1' }}
-                class='fab fa-css3-alt'
+                className='fab fa-css3-alt'
               ></i>
               <h4 style={{ fontWeight: '500' }}>CSS</h4>
               <p>Want some style</p>
             </div>
           </Col>
-          <Col lg='2' className='mx-auto'>
+          <Col lg='2' md='4' sm='4' xs='12' className='mx-auto'>
             <div className='text-center my-5'>
               <i
                 style={{ fontSize: '6rem', color: '#F7DF1E' }}
-                class='fab fa-js'
+                className='fab fa-js'
               ></i>
               <h4 style={{ fontWeight: '500' }}>Javascript</h4>
               <p>Listen to events</p>
             </div>
           </Col>
-          <Col lg='2' className='mx-auto'>
+          <Col lg='2' md='4' sm='4' xs='12' className='mx-auto'>
             <div className='text-center my-5'>
               <i
                 style={{ fontSize: '6rem', color: '#5ED3F3' }}
-                class='fab fa-react'
+                className='fab fa-react'
               ></i>
               <h4 style={{ fontWeight: '500' }}>React</h4>
               <p>Javascript Library</p>
             </div>
           </Col>
-          <Col lg='2' className='mx-auto'>
+          <Col lg='2' md='4' sm='4' xs='12' className='mx-auto'>
             <div className='text-center my-5'>
               <i
                 style={{ fontSize: '6rem', color: '#6FB352' }}
-                class='fab fa-node'
+                className='fab fa-node'
               ></i>
               <h4 style={{ fontWeight: '500' }}>Node JS</h4>
               <p>Servers/Backend</p>

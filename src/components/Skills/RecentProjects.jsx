@@ -1,7 +1,6 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext } from 'react'
 import { Card, CardDeck, Button } from 'react-bootstrap'
 import { DarkTheme, LightTheme, ThemeToggler } from '../../GlobalState'
-import Aos from 'aos'
 import RecentProjectsData from '../../Data/RecentProjects'
 import 'aos/dist/aos.css'
 const RecentProjects = () => {
@@ -27,15 +26,16 @@ const RecentProjects = () => {
         <div className='row'>
           {RecentProjectsData.map((item, index) => (
             <CardDeck
-              className='col-sm-12 col-md-6 col-lg-10 col-xl-4 mx-0 my-4 text-center'
+              className='col-sm-12 col-md-6 col-lg-10 col-xl-4 mx-auto my-4 text-center'
               key={index}
             >
               <div data-aos='fade-up'>
                 <Card>
                   <Card.Img variant='top' src={item.image} />
                   <Card.Body>
-                    {item.tags.map((item) => (
+                    {item.tags.map((item, index) => (
                       <span
+                        key={index}
                         style={{
                           background: 'orange',
                           padding: '5px 10px',
@@ -65,7 +65,7 @@ const RecentProjects = () => {
                     >
                       <i
                         style={{ marginRight: '4px' }}
-                        class='fas fa-laptop-code'
+                        className='fas fa-laptop-code'
                       ></i>{' '}
                       View Project
                     </Button>
@@ -78,7 +78,7 @@ const RecentProjects = () => {
                     >
                       <i
                         style={{ fontSize: '16px', marginRight: '6px' }}
-                        class='fab fa-github'
+                        className='fab fa-github'
                       ></i>
                       Github Repo
                     </Button>
