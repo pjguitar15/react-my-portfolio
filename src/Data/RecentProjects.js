@@ -5,6 +5,7 @@ import cookie from '../Assets/cookie.JPG'
 import ColorPalleteApp from '../Assets/color-pallete-app.JPG'
 import RandomNumberApp from '../Assets/random-number-app.JPG'
 import photogallery from '../Assets/photogallery.JPG'
+import adviceapp from '../Assets/adviceapp.JPG'
 
 const RecentProjectsData = [
   {
@@ -70,6 +71,15 @@ const RecentProjectsData = [
     tags: ['React', 'CSS', 'Boostrap'],
     link: 'https://cranky-wescoff-bef91e.netlify.app/',
     github: 'https://github.com/pjguitar15/react-photo-gallery'
+  },
+  {
+    id: 8,
+    title: 'Advice App',
+    text: 'A very simple Advice Web Application that generates a random advice from an API.',
+    image: adviceapp,
+    tags: ['React', 'CSS', 'Boostrap'],
+    link: 'https://modest-meninsky-058c79.netlify.app/',
+    github: 'https://github.com/pjguitar15/react-advice-app'
   },
 ]
 
