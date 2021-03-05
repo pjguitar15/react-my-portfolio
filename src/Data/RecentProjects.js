@@ -6,6 +6,7 @@ import ColorPalleteApp from '../Assets/color-pallete-app.JPG'
 import RandomNumberApp from '../Assets/random-number-app.JPG'
 import photogallery from '../Assets/photogallery.JPG'
 import adviceapp from '../Assets/adviceapp.JPG'
+import movieapp from '../Assets/movieapp.JPG'
 
 const RecentProjectsData = [
   {
@@ -80,6 +81,15 @@ const RecentProjectsData = [
     tags: ['React', 'CSS', 'Boostrap'],
     link: 'https://modest-meninsky-058c79.netlify.app/',
     github: 'https://github.com/pjguitar15/react-advice-app'
+  },
+  {
+    id: 8,
+    title: 'Movie App',
+    text: 'A Movie Web Application with loads of movie data fetched from a third party api called "themoviedb".',
+    image: movieapp,
+    tags: ['React', 'CSS', 'Boostrap', 'External API'],
+    link: 'https://laughing-bohr-e8ec18.netlify.app/',
+    github: 'https://github.com/pjguitar15/react-movie-app'
   },
 ]
 
