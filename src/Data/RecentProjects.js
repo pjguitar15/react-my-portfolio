@@ -27,7 +27,15 @@ const RecentProjectsData = [
     link: 'https://friendly-sinoussi-7c07a3.netlify.app/',
     github: 'https://github.com/pjguitar15/react-cookie'
   },
-
+  {
+    id: 8,
+    title: 'Movie App',
+    text: 'A Movie Web Application with loads of movie data fetched from a third party api called "themoviedb".',
+    image: movieapp,
+    tags: ['React', 'CSS', 'Boostrap', 'External API'],
+    link: 'https://laughing-bohr-e8ec18.netlify.app/',
+    github: 'https://github.com/pjguitar15/react-movie-app'
+  },
   {
     id: 3,
     title: 'Color Pallete App',
@@ -82,15 +90,7 @@ const RecentProjectsData = [
     link: 'https://modest-meninsky-058c79.netlify.app/',
     github: 'https://github.com/pjguitar15/react-advice-app'
   },
-  {
-    id: 8,
-    title: 'Movie App',
-    text: 'A Movie Web Application with loads of movie data fetched from a third party api called "themoviedb".',
-    image: movieapp,
-    tags: ['React', 'CSS', 'Boostrap', 'External API'],
-    link: 'https://laughing-bohr-e8ec18.netlify.app/',
-    github: 'https://github.com/pjguitar15/react-movie-app'
-  },
+
 ]
 
 export default RecentProjectsData
