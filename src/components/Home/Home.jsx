@@ -45,8 +45,7 @@ const Home = () => {
               }
               className='subtitle mt-2 p-0 text-center text-xl-left'
             >
-              I am a Frontend Developer based in Cavite. Feel free to look
-              around!
+              I am a Frontend Developer based in Cavite, Philippines.
             </p>
           </div>
           <p className='mt-5'>

@@ -24,7 +24,7 @@ const RecentProjectsData = [
     title: 'Social Media App',
     text: 'This is my current project which is a CRUD app that Im still working on. To make it a dynamic website, I am working with MongoDB for my storing datas from user. My goal is to also be able to create my own full stack website',
     image: cookie,
-    tags: ['Mern Stack'],
+    tags: ['Under Development', 'Mern Stack'],
     link: 'https://friendly-sinoussi-7c07a3.netlify.app/',
     github: 'https://github.com/pjguitar15/react-cookie'
   },
