@@ -30,13 +30,23 @@ const RecentProjects = () => {
               key={index}
             >
               <div data-aos='fade-up'>
-                <Card>
+                <Card
+                  className={`${isDark ? 'border' : 'border-0 shadow-sm '} `}
+                  style={isDark ? darktheme.dark : lighttheme.dark}
+                >
                   <Card.Img variant='top' src={item.image} />
-                  <Card.Body>
+                  <Card.Body
+                    style={
+                      isDark
+                        ? { color: darktheme.color }
+                        : { color: lighttheme.color }
+                    }
+                  >
                     {item.tags.map((item, index) => (
                       <span
                         key={index}
                         style={{
+                          userSelect: 'none',
                           background: 'orange',
                           padding: '5px 10px',
                           fontSize: '11px',

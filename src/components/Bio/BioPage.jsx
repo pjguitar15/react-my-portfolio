@@ -17,7 +17,10 @@ const BioPage = () => {
       className='py-5 '
       style={isDark ? darktheme.dark : lighttheme.dark}
     >
-      <h1 data-aos='fade-up' className='text-center mb-5 aboutH1'>
+      <h1
+        data-aos='fade-up'
+        className='text-center mb-5 aboutH1 user-select-none'
+      >
         {'<'}AboutMe{' />'}
       </h1>
       <div

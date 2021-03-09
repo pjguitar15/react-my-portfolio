@@ -27,7 +27,7 @@ const SkillsSection = () => {
         style={
           isDark ? { color: darktheme.color } : { color: lighttheme.color }
         }
-        className='text-center skillh3 mb-5'
+        className='text-center skillh3 mb-5 user-select-none'
       >
         Skills
       </h3>

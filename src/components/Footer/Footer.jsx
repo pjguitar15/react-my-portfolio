@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <MDBFooter
       className='font-small py-4 mt-5 text-light'
-      style={{ background: '#F26C50', marginTop: '0' }}
+      style={{ background: '#F26C50' }}
     >
       <MDBContainer fluid className='text-center'>
         <MDBCol md='6' className='mx-auto'>
@@ -12,7 +12,7 @@ const Footer = () => {
           <p>Designed and Developed by Philcob Suzuki Josol</p>
         </MDBCol>
         <MDBCol md='6' className='mx-auto'>
-          <ul className='d-flex mt-5 justify-content-around flex-wrap'>
+          <ul className='d-flex mt-5 justify-content-around flex-wrap row'>
             <li className='list-unstyled'>
               <a
                 className='text-light'

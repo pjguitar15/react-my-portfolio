@@ -13,7 +13,7 @@ const RecentProjectsData = [
   {
     id: 1,
     title: 'Guitar E-Commerce',
-    text: 'This project taught me how to properly manage components and states. Since I have to use multiple states running through the program, I used useContext hook and Global state file to store all my state.',
+    text: 'This project taught me how to properly manage components and states. I used useContext hook and Global state file to store all my state.',
     image: guitarapp,
     tags: ['React', 'Firebase', 'Stripe API'],
     link: 'https://philcobguitarshop.netlify.app/',
@@ -22,7 +22,7 @@ const RecentProjectsData = [
   {
     id: 2,
     title: 'Social Media App',
-    text: 'This is my current project which is a CRUD app that Im still working on. To make it a dynamic website, I am working with MongoDB for my storing datas from user. My goal is to also be able to create my own full stack website',
+    text: 'A CRUD project that I am still working on. I am working with MongoDB to store datas from user. My goal is to create my own full stack website',
     image: cookie,
     tags: ['Under Development', 'Mern Stack'],
     link: 'https://friendly-sinoussi-7c07a3.netlify.app/',
@@ -40,7 +40,7 @@ const RecentProjectsData = [
   {
     id: 3,
     title: 'Color Pallete App',
-    text: 'One of my early React projects. Using useState, I was able to create the color change functionality. I used an npm package to handle the copy text function',
+    text: 'Using useState hooks, I was able to create the color change functionality. I used an npm package to handle the copy text function',
     image: ColorPalleteApp,
     tags: ['React', 'CSS'],
     link: 'https://naughty-bhabha-1a8174.netlify.app/',
@@ -49,7 +49,7 @@ const RecentProjectsData = [
   {
     id: 4,
     title: 'Random Number Generator',
-    text: 'Using built in Javascript method, I was able to generate random numbers based on the user input. It is a very simple project but it can also be useful to some.',
+    text: 'Using Javascript methods, I generated random numbers from the user input. It is a very simple project but it can also be useful to some.',
     image: RandomNumberApp,
     tags: ['React', 'CSS'],
     link: 'https://boring-booth-4f6c67.netlify.app/',
@@ -58,7 +58,7 @@ const RecentProjectsData = [
   {
     id: 5,
     title: 'Todo-list App',
-    text: 'Todo list has always been known as the first step in learning React. This is one of my early React projects which taught me all about basics, its syntax, and understanding the concept of States and Lifecycle.',
+    text: 'This is one of my early React projects which taught me the basics, syntax, and understanding the concept of States and Lifecycle.',
     image: todolist,
     tags: ['React', 'CSS'],
     link: '#',
@@ -67,7 +67,7 @@ const RecentProjectsData = [
   {
     id: 10,
     title: 'We Swap App',
-    text: 'An idea from my brother, based from buy and sell websites, this project is basically to let people interact and swap their items and negotiate.',
+    text: 'An idea from my brother, this project is to let people interact, swap items and negotiate.',
     image: weswap,
     tags: ['React', 'Under Development'],
     link: 'https://stoic-neumann-99f11b.netlify.app/',
@@ -76,7 +76,7 @@ const RecentProjectsData = [
   {
     id: 6,
     title: 'Expense Tracker',
-    text: 'One of my early simple projects I created using Vanilla Javascript. It is a cash tracker that allows user manage its money using cash in, cashout system and tracks expenses.',
+    text: 'A cash tracker that allows user manage their money using cash in, cashout system and also tracks expenses.',
     image: expenseapp,
     tags: ['HTML', 'CSS', 'Javascript', 'Bootstrap'],
     link: 'https://philcobexpensecalculator.netlify.app/',
