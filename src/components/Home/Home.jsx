@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import NavbarComponent from '../NavbarComponent'
-import logo from '../../Assets/logo.svg'
+import logo from '../../Assets/newlogo.svg'
 import { Jumbotron, Container } from 'react-bootstrap'
 import { Link } from 'react-scroll'
 import pdf from '../../Assets/cv.pdf'
