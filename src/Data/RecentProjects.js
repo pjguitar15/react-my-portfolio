@@ -7,6 +7,7 @@ import RandomNumberApp from '../Assets/random-number-app.JPG'
 import photogallery from '../Assets/photogallery.JPG'
 import adviceapp from '../Assets/adviceapp.JPG'
 import movieapp from '../Assets/movieapp.JPG'
+import weswap from '../Assets/weswap.JPG'
 
 const RecentProjectsData = [
   {
@@ -62,6 +63,15 @@ const RecentProjectsData = [
     tags: ['React', 'CSS'],
     link: '#',
     github: 'https://github.com/pjguitar15/react-todolist-app'
+  },
+  {
+    id: 10,
+    title: 'We Swap App',
+    text: 'An idea from my brother, based from buy and sell websites, this project is basically to let people interact and swap their items and negotiate.',
+    image: weswap,
+    tags: ['React', 'Under Development'],
+    link: 'https://stoic-neumann-99f11b.netlify.app/',
+    github: 'https://github.com/pjguitar15/react-we-swap'
   },
   {
     id: 6,
