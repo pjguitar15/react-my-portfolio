@@ -8,6 +8,7 @@ import photogallery from '../Assets/photogallery.JPG'
 import adviceapp from '../Assets/adviceapp.JPG'
 import movieapp from '../Assets/movieapp.JPG'
 import weswap from '../Assets/weswap.JPG'
+import ilhwa from '../Assets/ilhwa.JPG'
 
 const RecentProjectsData = [
   {
@@ -72,6 +73,15 @@ const RecentProjectsData = [
     tags: ['React', 'Under Development'],
     link: 'https://stoic-neumann-99f11b.netlify.app/',
     github: 'https://github.com/pjguitar15/react-we-swap'
+  },
+  {
+    id: Date.now(),
+    title: 'Ilhwa Philippines Website',
+    text: 'A website for Ilhwa Company, a Korean Authenticated Ginseng Products, other herbal products, Vitamin, Supplement, Facial products etc.',
+    image: ilhwa,
+    tags: ['React', 'Static Website'],
+    link: 'https://modest-hypatia-36516e.netlify.app/',
+    github: 'https://github.com/pjguitar15/react-ilhwa-website'
   },
   {
     id: 6,
