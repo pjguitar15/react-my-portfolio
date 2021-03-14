@@ -29,12 +29,10 @@ const Home = () => {
             />
           </div>
           <span
-            style={
-              isDark ? { color: darktheme.color } : { color: lighttheme.color }
-            }
-            className='myName'
+            style={isDark ? { color: darktheme.color } : { color: '#F26C50' }}
+            className='myName display-4 font-weight-bold'
           >
-            Philcob Suzuki Josol
+            Hello, I'm Philcob
           </span>
           <div className=' p-0'>
             <p
@@ -45,7 +43,9 @@ const Home = () => {
               }
               className='subtitle mt-2 p-0 text-center text-xl-left'
             >
-              I am a Frontend Developer based in Cavite, Philippines.
+              I am a{' '}
+              <span className='font-weight-bold'>Frontend Developer</span> based
+              in Cavite, Philippines.
             </p>
           </div>
           <p className='mt-5'>
@@ -66,11 +66,10 @@ const Home = () => {
               duration={500}
             >
               <button
-                style={
-                  isDark
-                    ? { border: darktheme.border, color: darktheme.color }
-                    : { color: lighttheme.color }
-                }
+                style={{
+                  border: isDark && darktheme.border,
+                  color: isDark && darktheme.color,
+                }}
                 className='ml-2 contactButton inlineButtons'
               >
                 <i

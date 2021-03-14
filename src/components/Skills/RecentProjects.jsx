@@ -14,25 +14,26 @@ const RecentProjects = () => {
       className='projects px-md-5 skillsMainDiv'
       style={isDark ? darktheme.light : lighttheme.light}
     >
-      <h3
-        style={
-          isDark ? { color: darktheme.color } : { color: lighttheme.color }
-        }
-        className='text-center myRecentProjectsh3 mb-5 mt-5'
-      >
-        My Recent Projects
-      </h3>
+      <div className='container mb-5 mt-5'>
+        <h3
+          style={isDark ? { color: darktheme.color } : { color: '#f26c50' }}
+          className='text-left font-weight-bold myRecentProjectsh3 mt-5'
+        >
+          <span>—</span> <span> My Recent Projects </span>
+        </h3>
+        <div className='text-muted'>From 2020 to 2021</div>
+      </div>
       <div className='container'>
         <div className='row'>
           {RecentProjectsData.map((item, index) => (
             <CardDeck
-              className='col-sm-12 col-md-6 col-lg-10 col-xl-4 mx-auto my-4 text-center'
+              className='col-sm-12 col-md-6 col-lg-6 col-xl-4 mx-auto my-4 text-center'
               key={index}
             >
               <div data-aos='fade-up'>
                 <Card
-                  className={`${isDark ? 'border' : 'border-0 shadow-sm '} `}
-                  style={isDark ? darktheme.dark : lighttheme.dark}
+                  className={`${isDark ? 'border' : 'border-0 shadow-sm'} `}
+                  style={isDark ? darktheme.dark : lighttheme.light}
                 >
                   <Card.Img variant='top' src={item.image} />
                   <Card.Body
@@ -70,7 +71,7 @@ const RecentProjects = () => {
                     <Button
                       href={item.link}
                       target='_blank'
-                      variant='secondary'
+                      variant='dark'
                       size='sm'
                     >
                       <i
@@ -82,7 +83,7 @@ const RecentProjects = () => {
                     <Button
                       href={item.github}
                       target='_blank'
-                      variant='secondary'
+                      variant='dark'
                       size='sm'
                       style={{ marginLeft: '10px' }}
                     >

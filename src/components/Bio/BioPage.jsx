@@ -17,15 +17,18 @@ const BioPage = () => {
       className='py-5 '
       style={isDark ? darktheme.dark : lighttheme.dark}
     >
-      <h1
-        data-aos='fade-up'
-        className='text-center mb-5 aboutH1 user-select-none'
-      >
-        {'<'}AboutMe{' />'}
-      </h1>
+      <div className='container mb-5 mt-5'>
+        <h3
+          style={{ color: '#f26c50' }}
+          className='text-left font-weight-bold myRecentProjectsh3 mt-5'
+        >
+          <span>—</span> <span> About me </span>
+        </h3>
+        <div className='text-muted font-italic'>More about myself</div>
+      </div>
       <div
         style={isDark ? darktheme.light : lighttheme.light}
-        className='container aboutMePaper shadow py-5 rounded'
+        className='container aboutMePaper py-5 rounded'
       >
         <div className='aboutMeImg'>
           <img
@@ -58,38 +61,6 @@ const BioPage = () => {
                       style={{ fontSize: '50px', marginBottom: '20px' }}
                       className='fas fa-code'
                     ></i>
-                    <div>{item.title}</div>
-                  </div>
-                )}
-                {item.title === 'Music' && (
-                  <div
-                    style={{
-                      display: 'flex',
-                      justifyContent: 'center',
-                      flexDirection: 'column',
-                    }}
-                  >
-                    <i
-                      className='fas fa-music'
-                      style={{ fontSize: '50px', marginBottom: '20px' }}
-                    ></i>
-
-                    <div>{item.title}</div>
-                  </div>
-                )}
-                {item.title === 'Sports' && (
-                  <div
-                    style={{
-                      display: 'flex',
-                      justifyContent: 'center',
-                      flexDirection: 'column',
-                    }}
-                  >
-                    <i
-                      className='fas fa-table-tennis'
-                      style={{ fontSize: '50px', marginBottom: '20px' }}
-                    ></i>
-
                     <div>{item.title}</div>
                   </div>
                 )}

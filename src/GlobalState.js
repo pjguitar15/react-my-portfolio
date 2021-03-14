@@ -43,7 +43,7 @@ const GlobalState = ({ children }) => {
     {
       id: 1,
       title: 'Hello, World',
-      description: `I'm Philcob, a Front End Developer, 22 years old from Trece Martires City, Cavite, Philippines.`
+      description: `Hello! I'm Philcob, a Front End Developer, 22 years old from Trece Martires City, Cavite, Philippines.`
     },
     {
       id: 4,

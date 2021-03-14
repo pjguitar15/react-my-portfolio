@@ -34,7 +34,7 @@ const RecentProjectsData = [
     title: 'Movie App',
     text: 'A Movie Web Application with loads of movie data fetched from a third party api called "themoviedb".',
     image: movieapp,
-    tags: ['React', 'CSS', 'Boostrap', 'External API'],
+    tags: ['React', 'Boostrap', 'External API'],
     link: 'https://laughing-bohr-e8ec18.netlify.app/',
     github: 'https://github.com/pjguitar15/react-movie-app'
   },
