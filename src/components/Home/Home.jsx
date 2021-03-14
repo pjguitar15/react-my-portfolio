@@ -73,7 +73,7 @@ const Home = () => {
                   border: isDark && darktheme.border,
                   color: isDark && darktheme.color,
                 }}
-                className='ml-2 contactButton inlineButtons shadow-sm'
+                className='ml-2 contactButton inlineButtons mt-md-0 mt-3 shadow-sm'
               >
                 <i
                   style={{ fontSize: '15px', marginRight: '8px' }}
