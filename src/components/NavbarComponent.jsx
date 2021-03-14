@@ -18,9 +18,10 @@ const NavbarComponent = () => {
   return (
     <div>
       <Navbar
-        style={isDark ? darktheme.dark : lighttheme.light}
+        // style={isDark ? darktheme.dark : lighttheme.light}
         expand='xl'
         fixed='top'
+        className='main-navbar'
       >
         <Link
           activeClass='active'
@@ -41,8 +42,8 @@ const NavbarComponent = () => {
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav
-            className={`text-center rounded mainNav  ${
-              isDark ? 'bg-dark' : 'bg-light'
+            className={`text-center mainNav   ${
+              isDark ? 'bg-dark' : 'border shadow-sm rounded'
             } `}
           >
             <Link

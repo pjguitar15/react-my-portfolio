@@ -8,13 +8,20 @@ import { DarkTheme, LightTheme, ThemeToggler } from '../../GlobalState'
 const Home = () => {
   const darktheme = useContext(DarkTheme)
   const lighttheme = useContext(LightTheme)
-  const [isDark, setIsDark] = useContext(ThemeToggler)
+  const [isDark] = useContext(ThemeToggler)
   return (
     <div id='home'>
       <NavbarComponent />
       <Jumbotron
         className='jumbotronStyle'
-        style={isDark ? darktheme.light : lighttheme.light}
+        style={
+          isDark
+            ? darktheme.light
+            : {
+                backgroundImage:
+                  'linear-gradient( 112.7deg, rgba(255,138,0,0.8) 70.2% , rgba(253,185,83,0.9) 11%)',
+              }
+        }
       >
         <Container
           style={{ marginTop: '10vh' }}
@@ -29,18 +36,14 @@ const Home = () => {
             />
           </div>
           <span
-            style={isDark ? { color: darktheme.color } : { color: '#F26C50' }}
+            style={isDark ? { color: darktheme.color } : { color: '#ffffff' }}
             className='myName display-4 font-weight-bold'
           >
             Hello, I'm Philcob
           </span>
           <div className=' p-0'>
             <p
-              style={
-                isDark
-                  ? { color: darktheme.color }
-                  : { color: lighttheme.color }
-              }
+              style={isDark ? { color: darktheme.color } : { color: '#ffffff' }}
               className='subtitle mt-2 p-0 text-center text-xl-left'
             >
               I am a{' '}
@@ -52,7 +55,7 @@ const Home = () => {
             <a
               target='_blank'
               href={pdf}
-              className='downloadCv text-decoration-none'
+              className='downloadCv text-decoration-none shadow-sm'
             >
               <i style={{ marginRight: '8px' }} className='fas fa-download'></i>
               Download CV
@@ -70,7 +73,7 @@ const Home = () => {
                   border: isDark && darktheme.border,
                   color: isDark && darktheme.color,
                 }}
-                className='ml-2 contactButton inlineButtons'
+                className='ml-2 contactButton inlineButtons shadow-sm'
               >
                 <i
                   style={{ fontSize: '15px', marginRight: '8px' }}

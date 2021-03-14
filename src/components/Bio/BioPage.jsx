@@ -14,80 +14,74 @@ const BioPage = () => {
   return (
     <div
       id='about'
-      className='py-5 '
+      className='about'
       style={isDark ? darktheme.dark : lighttheme.dark}
     >
-      <div className='container mb-5 mt-5'>
+      <div className='container mb-5 '>
         <h3
           style={{ color: '#f26c50' }}
-          className='text-left font-weight-bold myRecentProjectsh3 mt-5'
+          className='text-left font-weight-bold myRecentProjectsh3'
         >
           <span>—</span> <span> About me </span>
         </h3>
         <div className='text-muted font-italic'>More about myself</div>
       </div>
-      <div
-        style={isDark ? darktheme.light : lighttheme.light}
-        className='container aboutMePaper py-5 rounded'
-      >
-        <div className='aboutMeImg'>
-          <img
-            data-aos='fade-up'
-            src='https://scontent.fmnl9-2.fna.fbcdn.net/v/t1.0-9/84246825_3504451782961648_5276566424934940672_o.jpg?_nc_cat=101&ccb=3&_nc_sid=174925&_nc_ohc=k5zWpd1NTqoAX_0qlcH&_nc_ht=scontent.fmnl9-2.fna&oh=511348142d228fe8007aa657d2d1e4a4&oe=605A56FB'
-            alt=''
-            style={{ width: '100%', borderRadius: '50%' }}
-            className='shadow bioImg'
-          />
-        </div>
-        {aboutMeData.map((item) => (
-          <div key={item.id} data-aos='fade-up' className='row'>
-            <div className='col-md-10 col-xl-6 my-5 py-5 mx-auto text-center col-xs-12'>
-              <h2
-                style={
-                  isDark
-                    ? { color: darktheme.color }
-                    : { color: lighttheme.color }
-                }
-              >
-                {item.title === 'Programming' && (
-                  <div
-                    style={{
-                      display: 'flex',
-                      justifyContent: 'center',
-                      flexDirection: 'column',
-                    }}
-                  >
-                    <i
-                      style={{ fontSize: '50px', marginBottom: '20px' }}
-                      className='fas fa-code'
-                    ></i>
-                    <div>{item.title}</div>
-                  </div>
-                )}
-              </h2>
-              {item.title !== 'Hello, World' && (
-                <hr
-                  style={
-                    isDark
-                      ? { border: 'solid white 0.1px' }
-                      : { border: 'solid black 0.1px' }
-                  }
-                />
-              )}
 
-              <p
-                className='lead aboutMeP'
-                style={
-                  isDark
-                    ? { color: darktheme.color }
-                    : { color: lighttheme.color }
-                }
-              >
-                {item.description}
-              </p>
-            </div>
+      {/* paper starts here */}
+      <div className='container aboutMePaper'>
+        <div className='row'>
+          {/* img component */}
+          <div className='aboutMeImg col-xl-4'>
+            <img
+              data-aos='fade-up'
+              src='https://scontent.fmnl9-2.fna.fbcdn.net/v/t1.0-9/84246825_3504451782961648_5276566424934940672_o.jpg?_nc_cat=101&ccb=3&_nc_sid=174925&_nc_ohc=k5zWpd1NTqoAX_0qlcH&_nc_ht=scontent.fmnl9-2.fna&oh=511348142d228fe8007aa657d2d1e4a4&oe=605A56FB'
+              alt=''
+              style={{ width: '100%' }}
+            />
           </div>
-        ))}
+
+          {/* text content here */}
+          <div data-aos='fade-up' className='col-xl-8'>
+            <h2
+              style={
+                isDark
+                  ? { color: darktheme.color }
+                  : { color: lighttheme.color }
+              }
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  flexDirection: 'column',
+                }}
+              >
+                <div className='display-3'>Hello!</div>
+              </div>
+            </h2>
+
+            <p
+              className='lead aboutMeP'
+              style={
+                isDark
+                  ? { color: darktheme.color }
+                  : { color: lighttheme.color }
+              }
+            >
+              I'm <mark>Philcob Suzuki Josol</mark>, a Front End Developer, 22
+              years old from Trece Martires City, Cavite, Philippines.
+            </p>
+            <hr />
+            <p className='mt-5 bio-paragraph text-muted'>
+              When I first created my Hello World application, it was the moment
+              when I immediately realized my love for development. The first
+              language I learned was C++ at school and before that, I didnt know
+              anything about programming. Since then, I have developed my
+              passion. Years went by, I realize that my path was to become a
+              Front End Developer and started to love React
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   )
