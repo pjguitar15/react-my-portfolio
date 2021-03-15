@@ -41,13 +41,8 @@ const NavbarComponent = () => {
         </Link>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
-          <Nav
-            className={`text-center mainNav   ${
-              isDark ? 'bg-dark' : 'border shadow-sm rounded'
-            } `}
-          >
+          <Nav className='text-center mainNav rounded'>
             <Link
-              className={`${isDark ? 'mainLinkItemDark' : 'mainLinkItem'}`}
               activeClass='active'
               to='home'
               spy={true}
@@ -129,27 +124,27 @@ const NavbarComponent = () => {
               to='contact'
               spy={true}
               smooth={true}
-              offset={0}
+              offset={200}
               duration={500}
             >
               <Nav.Link
                 style={{ color: isDark && darktheme.color }}
                 className='navLink mx-4'
               >
-                {/* <i
-                  style={{ fontSize: '15px', marginRight: '8px' }}
-                  className='fas fa-mobile'
-                ></i> */}
                 Contact
               </Nav.Link>
             </Link>
           </Nav>
         </Navbar.Collapse>
         <h6
-          className='d-none d-xl-block'
+          className='d-none toggle-icon d-xl-block'
           style={{ color: isDark && darktheme.color }}
         >
-          {isDark ? 'Dark theme' : 'Light theme'}
+          {isDark ? (
+            <i class='fas fa-moon'></i>
+          ) : (
+            <i className='far text-light font-weight-bolder fa-sun'></i>
+          )}
         </h6>
         <div className='d-none d-xl-block'>
           <Switch

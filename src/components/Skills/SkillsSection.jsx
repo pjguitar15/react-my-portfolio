@@ -13,14 +13,14 @@ const SkillsSection = () => {
   const darktheme = useContext(DarkTheme)
   const lighttheme = useContext(LightTheme)
   const [isDark, setIsDark] = useContext(ThemeToggler)
-  const cartData = useContext(CardWorksData)
+
   useEffect(() => {
     Aos.init({ duration: 2000 })
   }, [])
   return (
     <div
       id='skills'
-      className='px-md-5 skillsMainDiv'
+      className='px-md-5 skillsMainDiv m-0'
       style={isDark ? darktheme.light : lighttheme.light}
     >
       <h3

@@ -13,13 +13,14 @@ const Home = () => {
     <div id='home'>
       <NavbarComponent />
       <Jumbotron
-        className='jumbotronStyle'
+        className='jumbotronStyle rounded-0 m-0'
         style={
           isDark
             ? darktheme.light
             : {
+                backgroundColor: '#FBAB7E',
                 backgroundImage:
-                  'linear-gradient( 112.7deg, rgba(255,138,0,0.8) 70.2% , rgba(253,185,83,0.9) 11%)',
+                  'linear-gradient(62deg,  #FBAB7E 0%,#F7CE68 100%)',
               }
         }
       >

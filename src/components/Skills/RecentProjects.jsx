@@ -11,15 +11,15 @@ const RecentProjects = () => {
   return (
     <div
       id='projects'
-      className='projects  skillsMainDiv'
-      style={isDark ? darktheme.light : lighttheme.light}
+      className='skillsMainDiv m-0'
+      style={isDark ? darktheme.light : { background: '#f8f9fe' }}
     >
       <div className='container mb-5 mt-5'>
         <h3
           style={isDark ? { color: darktheme.color } : { color: '#f26c50' }}
           className='text-left font-weight-bold myRecentProjectsh3 mt-5'
         >
-          <span>—</span> <span> My Recent Projects </span>
+          <span>—</span> <span> My Recent Projects</span>
         </h3>
         <div className='text-muted'>From 2020 to 2021</div>
       </div>

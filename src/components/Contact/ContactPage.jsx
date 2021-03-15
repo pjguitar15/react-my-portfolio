@@ -18,7 +18,7 @@ const ContactPage = () => {
   return (
     <div
       id='contact'
-      className='contactBg'
+      className='contactBg m-0'
       style={isDark ? darktheme.dark : lighttheme.dark}
     >
       <h2

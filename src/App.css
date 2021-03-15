@@ -15,19 +15,15 @@ body {
   font-size: 15px; 
 }
 
-.mainLinkItem{
-  /* border: solid black 1px; */
-  transition-duration: 0.3s;  
-}
-.mainLinkItemDark{
-  border: solid #343A40 2px;
-}
+
 
 .mainNav > .active {
   
-  
-  background-color: #f5f4f8;
+  color: #323232;
+  /* background-color: #f5f4f8; */
   transition-duration: 0.3s;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 .jumbotronStyle {
@@ -56,15 +52,16 @@ body {
 .myName {
   font-size: 45px;
   font-weight: 700;  
-  transition: 0.3s;
+  transition: 0.1s;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1);
 }
 
 
 .myName:hover{
   cursor:default;
+  transition: 0.1s;
   user-select: none;
-
+  text-shadow: none;
 }
 
 .subtitle {
@@ -96,8 +93,8 @@ body {
 .contactButton {
   background: none;
   padding: 5.9px 20px;
-  border: solid rgb(29, 29, 29) 0.1px;
-  color: rgb(29, 29, 29);
+  border: solid white 0.1px;
+  color: white;
   font-weight: 600;
   border-radius: 50px;
   font-size: 14px;
@@ -108,12 +105,24 @@ body {
   border: solid white 0.2px;
   color: black;
 }
-
+.fa-sun, .fa-moon{
+  font-size: 25px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.toggle-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .skillCard:hover {
   cursor: pointer;
   transition: 0.5s;
   background-color: #f7f7f7;
   box-shadow: 1px 1px 5px 5px #f0f0f0;
+}
+
+.accordion:hover{
+  cursor: pointer;
 }
 
 textarea,
@@ -156,8 +165,7 @@ textarea:focus,
 }
 
 .skillsMainDiv {
-  padding: 15rem 0;
-  margin-top: -2rem;
+  padding: 16rem 0;  
 }
 
 .aboutMeImg {
@@ -179,7 +187,7 @@ textarea:focus,
 .contactBg {
   height: 100vh;
   padding: 100px 0;
-  margin-bottom: -4rem;
+  
 }
 
 
@@ -195,9 +203,14 @@ textarea:focus,
 }
 .myRecentProjectsh3 {
   font-weight: 700;
+  
+}
+.about-me-h3{
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1);
 }
 .about{
   padding: 18rem 0;
+  
 }
 
 @media (max-width: 576px) {
