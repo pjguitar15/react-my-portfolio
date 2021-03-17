@@ -54,7 +54,7 @@ const RecentProjectsData = [
     text: 'This is one of my early React projects which taught me the basics, syntax, and understanding the concept of States and Lifecycle.',
     image: todolist,
     tags: ['React', 'CSS', 'Firebase'],
-    link: 'philcobtodolist.netlify.app/',
+    link: 'https://philcobtodolist.netlify.app/',
     github: 'https://github.com/pjguitar15/react-new-todolist'
   },
   {
