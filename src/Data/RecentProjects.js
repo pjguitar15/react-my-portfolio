@@ -49,6 +49,15 @@ const RecentProjectsData = [
     github: 'https://github.com/pjguitar15/firebase-auth'
   },
   {
+    id: 5,
+    title: 'Todo-list App',
+    text: 'This is one of my early React projects which taught me the basics, syntax, and understanding the concept of States and Lifecycle.',
+    image: todolist,
+    tags: ['React', 'CSS', 'Firebase'],
+    link: 'https://jolly-meitner-ddc5cf.netlify.app/',
+    github: 'https://github.com/pjguitar15/react-new-todolist'
+  },
+  {
     id: 3,
     title: 'Color Pallete App',
     text: 'Using useState hooks, I was able to create the color change functionality. I used an npm package to handle the copy text function',
@@ -66,15 +75,7 @@ const RecentProjectsData = [
     link: 'https://boring-booth-4f6c67.netlify.app/',
     github: 'https://github.com/pjguitar15/react-random-number-generator'
   },
-  {
-    id: 5,
-    title: 'Todo-list App',
-    text: 'This is one of my early React projects which taught me the basics, syntax, and understanding the concept of States and Lifecycle.',
-    image: todolist,
-    tags: ['React', 'CSS'],
-    link: '#',
-    github: 'https://github.com/pjguitar15/react-todolist-app'
-  },
+
   {
     id: 10,
     title: 'We Swap App',
