@@ -9,6 +9,7 @@ import adviceapp from '../Assets/adviceapp.JPG'
 import movieapp from '../Assets/movieapp.JPG'
 import weswap from '../Assets/weswap.JPG'
 import ilhwa from '../Assets/ilhwa.JPG'
+import chatapp from '../Assets/chatapp.JPG'
 
 const RecentProjectsData = [
   {
@@ -37,6 +38,15 @@ const RecentProjectsData = [
     tags: ['React', 'Boostrap', 'External API'],
     link: 'https://laughing-bohr-e8ec18.netlify.app/',
     github: 'https://github.com/pjguitar15/react-movie-app'
+  },
+  {
+    id: Date.now(),
+    title: 'Chat App',
+    text: 'A chat web application with functional realtime database and user authentication.',
+    image: chatapp,
+    tags: ['React', 'Firebase', 'Bootstrap'],
+    link: 'https://epic-pare-6da3e2.netlify.app/',
+    github: 'https://github.com/pjguitar15/firebase-auth'
   },
   {
     id: 3,
