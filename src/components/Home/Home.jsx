@@ -4,6 +4,7 @@ import logo from '../../Assets/newlogo.svg'
 import { Jumbotron, Container } from 'react-bootstrap'
 import { Link } from 'react-scroll'
 import pdf from '../../Assets/cv.pdf'
+import svgbg from '../../Assets/SVG/Asset_2.svg'
 import { DarkTheme, LightTheme, ThemeToggler } from '../../GlobalState'
 const Home = () => {
   const darktheme = useContext(DarkTheme)
@@ -18,10 +19,10 @@ const Home = () => {
           isDark
             ? darktheme.light
             : {
-                background: '#373B44',
-                background:
-                  '-webkit-linear-gradient(to right, #4286f4, #373B44)',
-                background: 'linear-gradient(to right, #4286f4, #373B44)',
+                background: `url(${svgbg}) no-repeat`,
+                backgroundSize: 'cover',
+                height: '100vh',
+                width: '100vw',
               }
         }
       >

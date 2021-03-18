@@ -20,7 +20,7 @@ const SkillsSection = () => {
   return (
     <div
       id='skills'
-      className='px-md-5 skillsMainDiv m-0'
+      className='px-md-5 skillsMainDivv'
       style={isDark ? darktheme.light : lighttheme.light}
     >
       <h3

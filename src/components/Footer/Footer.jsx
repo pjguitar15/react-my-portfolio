@@ -4,7 +4,9 @@ const Footer = () => {
   return (
     <MDBFooter
       className='font-small py-4 m-0 text-light'
-      style={{ background: '#F26C50' }}
+      style={{
+        background: '#1F8EB9',
+      }}
     >
       <MDBContainer fluid className='text-center'>
         <MDBCol md='6' className='mx-auto'>

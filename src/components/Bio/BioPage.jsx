@@ -2,6 +2,7 @@ import React, { useEffect, useContext } from 'react'
 import { AboutMeData } from '../../GlobalState'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import svgbg from '../../Assets/SVG/Asset_3.svg'
 import { Accordion, Card, Container } from 'react-bootstrap'
 import { DarkTheme, LightTheme, ThemeToggler } from '../../GlobalState'
 const BioPage = () => {
@@ -20,13 +21,12 @@ const BioPage = () => {
         isDark
           ? darktheme.dark
           : {
-              backgroundColor: '#FBAB7E',
-              backgroundImage:
-                'linear-gradient(62deg,  #FBAB7E 0%,#F7CE68 100%)',
+              background: `url(${svgbg}) no-repeat`,
+              backgroundSize: 'cover',
             }
       }
     >
-      <div className='container mb-5 '>
+      <div className='container mb-5 mt-5'>
         <h3
           style={isDark ? { color: '#f26c50' } : { color: 'white' }}
           className='text-left font-weight-bold myRecentProjectsh3 about-me-h3'

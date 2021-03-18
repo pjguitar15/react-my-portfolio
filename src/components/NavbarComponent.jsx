@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Navbar, Nav } from 'react-bootstrap'
+import { Navbar, Nav, Container } from 'react-bootstrap'
 import { Link } from 'react-scroll'
 import Switch from '@material-ui/core/Switch'
 import logo from '../Assets/favicon.png'
@@ -41,7 +41,7 @@ const NavbarComponent = () => {
         </Link>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
-          <Nav className='text-center mainNav rounded'>
+          <Nav className='text-center mainNav rounded ml-auto'>
             <Link
               activeClass='active'
               to='home'
@@ -88,14 +88,13 @@ const NavbarComponent = () => {
               to='about'
               spy={true}
               smooth={true}
-              offset={100}
+              offset={300}
               duration={500}
             >
               <Nav.Link
                 style={{ color: isDark && darktheme.color }}
                 className='navLink mx-4'
               >
-                {/* <i style={{ marginRight: '8px' }} className='fas fa-user'></i> */}
                 About
               </Nav.Link>
             </Link>
@@ -136,7 +135,7 @@ const NavbarComponent = () => {
             </Link>
           </Nav>
         </Navbar.Collapse>
-        <h6
+        {/* <h6
           className='d-none toggle-icon d-xl-block'
           style={{ color: isDark && darktheme.color }}
         >
@@ -153,7 +152,7 @@ const NavbarComponent = () => {
             name='checkedA'
             inputProps={{ 'aria-label': 'secondary checkbox' }}
           />
-        </div>
+        </div> */}
       </Navbar>
     </div>
   )

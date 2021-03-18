@@ -67,7 +67,7 @@ const ContactPage = () => {
           </div>
           <button
             style={{
-              backgroundColor: '#F26C50',
+              backgroundColor: '#1F8EB9',
               border: 'none',
             }}
             type='submit'
