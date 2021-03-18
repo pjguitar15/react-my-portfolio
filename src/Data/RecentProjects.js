@@ -22,15 +22,6 @@ const RecentProjectsData = [
     github: 'https://github.com/pjguitar15/react-guitar-ecommerce'
   },
   {
-    id: 2,
-    title: 'Social Media App',
-    text: 'A CRUD project that I am still working on. I am working with MongoDB to store datas from user. My goal is to create my own full stack website',
-    image: cookie,
-    tags: ['Under Development', 'Mern Stack'],
-    link: 'https://friendly-sinoussi-7c07a3.netlify.app/',
-    github: 'https://github.com/pjguitar15/react-cookie'
-  },
-  {
     id: 8,
     title: 'Movie App',
     text: 'A Movie Web Application with loads of movie data fetched from a third party api called "themoviedb".',

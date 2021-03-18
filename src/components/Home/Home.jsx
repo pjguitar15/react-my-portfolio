@@ -18,9 +18,10 @@ const Home = () => {
           isDark
             ? darktheme.light
             : {
-                backgroundColor: '#FBAB7E',
-                backgroundImage:
-                  'linear-gradient(62deg,  #FBAB7E 0%,#F7CE68 100%)',
+                background: '#373B44',
+                background:
+                  '-webkit-linear-gradient(to right, #4286f4, #373B44)',
+                background: 'linear-gradient(to right, #4286f4, #373B44)',
               }
         }
       >
