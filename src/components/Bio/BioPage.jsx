@@ -76,7 +76,8 @@ const BioPage = () => {
             <p className='mt-5 bio-paragraph text-light'>
               The moment I created my first Hello World application, I
               immediately realized my love for development. Since then, I have
-              developed my passion and after a while, I realize that my path is to be a Front End Development.
+              developed my passion and after a while, I realize that my path is
+              to be a Front End Developer.
             </p>
           </div>
         </div>
