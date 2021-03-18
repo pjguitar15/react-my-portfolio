@@ -22,7 +22,6 @@ const Home = () => {
                 background: `url(${svgbg}) no-repeat`,
                 backgroundSize: 'cover',
                 height: '100vh',
-                width: '100vw',
               }
         }
       >

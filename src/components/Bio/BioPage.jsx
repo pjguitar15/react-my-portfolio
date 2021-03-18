@@ -6,9 +6,8 @@ import svgbg from '../../Assets/SVG/Asset_3.svg'
 import { Accordion, Card, Container } from 'react-bootstrap'
 import { DarkTheme, LightTheme, ThemeToggler } from '../../GlobalState'
 const BioPage = () => {
-  const aboutMeData = useContext(AboutMeData)
   const darktheme = useContext(DarkTheme)
-  const lighttheme = useContext(LightTheme)
+
   const [isDark] = useContext(ThemeToggler)
   useEffect(() => {
     Aos.init({ duration: 2000 })
@@ -16,13 +15,14 @@ const BioPage = () => {
   return (
     <div
       id='about'
-      className='about m-0'
+      className='about m-0 '
       style={
         isDark
           ? darktheme.dark
           : {
               background: `url(${svgbg}) no-repeat`,
               backgroundSize: 'cover',
+              width: '100%',
             }
       }
     >
@@ -63,35 +63,17 @@ const BioPage = () => {
                   flexDirection: 'column',
                 }}
               >
-                <div
-                  style={
-                    isDark ? { color: darktheme.color } : { color: '#323232' }
-                  }
-                  className='display-3 mt-sm-5'
-                >
-                  Hello!
-                </div>
+                <div className='display-3 mt-sm-5 text-light'>Hello!</div>
               </div>
             </h2>
 
-            <p
-              style={isDark ? { color: darktheme.color } : { color: '#323232' }}
-              className='lead aboutMeP'
-            >
-              I'm Philcob Suzuki Josol, a Front End Developer, 22 years old from
-              Trece Martires City, Cavite, Philippines.
+            <p className='lead aboutMeP text-light'>
+              I'm <span className='font-weight-bold'>Philcob Suzuki Josol</span>
+              , a Front End Developer, 22 years old from Trece Martires City,
+              Cavite, Philippines.
             </p>
-            <hr
-              style={
-                isDark
-                  ? { background: darktheme.color }
-                  : { background: '#323232' }
-              }
-            />
-            <p
-              style={isDark ? { color: darktheme.color } : { color: '#323232' }}
-              className='mt-5 bio-paragraph'
-            >
+            <hr />
+            <p className='mt-5 bio-paragraph text-light'>
               The moment I created my first Hello World application, I
               immediately realized my love for development. Since then, I have
               developed my passion and after a while, I realize that I'm gonna
