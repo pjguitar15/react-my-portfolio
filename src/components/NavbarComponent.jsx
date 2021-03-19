@@ -1,8 +1,6 @@
 import React, { useContext } from 'react'
-import { Navbar, Nav, Container } from 'react-bootstrap'
+import { Navbar, Nav } from 'react-bootstrap'
 import { Link } from 'react-scroll'
-import Switch from '@material-ui/core/Switch'
-import logo from '../Assets/favicon.png'
 import {
   ThemeToggler,
   TogglerHandler,
@@ -10,19 +8,15 @@ import {
   LightTheme,
 } from '../GlobalState'
 const NavbarComponent = () => {
-  const handleChange = useContext(TogglerHandler)
   const [isDark] = useContext(ThemeToggler)
   const darktheme = useContext(DarkTheme)
-  const lighttheme = useContext(LightTheme)
 
   return (
     <div>
-      <Navbar
-        // style={isDark ? darktheme.dark : lighttheme.light}
-        expand='xl'
-        fixed='top'
-        className='main-navbar'
-      >
+      <Navbar.Brand className='col-5 p-0 mx-auto position-absolute'>
+        <h1 className='my-portfolio'>my portfolio</h1>
+      </Navbar.Brand>
+      <Navbar expand='xl' className='main-navbar fixed-top'>
         <Link
           activeClass='active'
           to='home'
@@ -30,15 +24,7 @@ const NavbarComponent = () => {
           smooth={true}
           offset={0}
           duration={500}
-        >
-          <Navbar.Brand className='col-5 p-0 mx-auto'>
-            <img
-              className='logoImg'
-              style={{ height: '100%', width: '100%' }}
-              src={logo}
-            />
-          </Navbar.Brand>
-        </Link>
+        ></Link>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='text-center mainNav rounded ml-auto'>
@@ -54,10 +40,6 @@ const NavbarComponent = () => {
                 style={{ color: isDark && darktheme.color }}
                 className='navLink mx-4'
               >
-                {/* <i
-                  style={{ fontSize: '19px', marginRight: '8px' }}
-                  className='fa fa-home'
-                ></i> */}
                 Home
               </Nav.Link>
             </Link>

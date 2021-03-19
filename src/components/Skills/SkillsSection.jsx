@@ -1,5 +1,6 @@
 import React, { useContext, useEffect } from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
+import firebaselogo from '../../Assets/firebase.png'
 import {
   CardWorksData,
   DarkTheme,
@@ -86,6 +87,17 @@ const SkillsSection = () => {
               ></i>
               <h4 style={{ fontWeight: '500' }}>Node JS</h4>
               <p>Servers/Backend</p>
+            </div>
+          </Col>
+          <Col lg='2' md='4' sm='4' xs='12' className='mx-auto'>
+            <div className='text-center my-5'>
+              <img
+                style={{ maxHeight: '6rem' }}
+                src={firebaselogo}
+                alt='firebase'
+              />
+              <h4 style={{ fontWeight: '500' }}>Firebase</h4>
+              <p>Backend Service</p>
             </div>
           </Col>
         </Row>
