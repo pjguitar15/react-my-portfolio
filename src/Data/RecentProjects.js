@@ -1,10 +1,9 @@
 import guitarapp from '../Assets/guitarapp.JPG'
 import expenseapp from '../Assets/expense-calculator-app.JPG'
 import todolist from '../Assets/todolist.JPG'
-import cookie from '../Assets/cookie.JPG'
 import ColorPalleteApp from '../Assets/color-pallete-app.JPG'
 import RandomNumberApp from '../Assets/random-number-app.JPG'
-import photogallery from '../Assets/photogallery.JPG'
+import photogallery from '../Assets/firegram.JPG'
 import adviceapp from '../Assets/adviceapp.JPG'
 import movieapp from '../Assets/movieapp.JPG'
 import weswap from '../Assets/weswap.JPG'
@@ -96,12 +95,12 @@ const RecentProjectsData = [
   },
   {
     id: 7,
-    title: 'Cat Photo Gallery',
-    text: 'A very simple photo gallery that allows to preview photos from the gallery.',
+    title: 'Firegram',
+    text: 'A very simple photo gallery, based on Instagram that allows you to upload files and store it to Firebase storage.',
     image: photogallery,
-    tags: ['React', 'CSS', 'Boostrap'],
-    link: 'https://cranky-wescoff-bef91e.netlify.app/',
-    github: 'https://github.com/pjguitar15/react-photo-gallery'
+    tags: ['React', 'Firebase', 'Boostrap'],
+    link: 'https://cranky-murdock-3c2193.netlify.app/',
+    github: 'https://github.com/pjguitar15/react-firegram'
   },
   {
     id: 8,
