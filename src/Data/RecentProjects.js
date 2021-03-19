@@ -35,7 +35,7 @@ const RecentProjectsData = [
     text: 'A chat web application with functional realtime database and user authentication.',
     image: chatapp,
     tags: ['React', 'Firebase', 'Bootstrap'],
-    link: 'https://epic-pare-6da3e2.netlify.app/',
+    link: 'https://philcobchatapp.netlify.app/',
     github: 'https://github.com/pjguitar15/firebase-auth'
   },
   {
@@ -46,6 +46,15 @@ const RecentProjectsData = [
     tags: ['React', 'CSS', 'Firebase'],
     link: 'https://philcobtodolist.netlify.app/',
     github: 'https://github.com/pjguitar15/react-new-todolist'
+  },
+  {
+    id: 7,
+    title: 'Firegram',
+    text: 'A very simple photo gallery, based on Instagram that allows you to upload files and store it to Firebase storage.',
+    image: photogallery,
+    tags: ['React', 'Firebase', 'Boostrap'],
+    link: 'https://cranky-murdock-3c2193.netlify.app/',
+    github: 'https://github.com/pjguitar15/react-firegram'
   },
   {
     id: 3,
@@ -93,15 +102,7 @@ const RecentProjectsData = [
     link: 'https://philcobexpensecalculator.netlify.app/',
     github: 'https://github.com/pjguitar15/expense-calculator'
   },
-  {
-    id: 7,
-    title: 'Firegram',
-    text: 'A very simple photo gallery, based on Instagram that allows you to upload files and store it to Firebase storage.',
-    image: photogallery,
-    tags: ['React', 'Firebase', 'Boostrap'],
-    link: 'https://cranky-murdock-3c2193.netlify.app/',
-    github: 'https://github.com/pjguitar15/react-firegram'
-  },
+
   {
     id: 8,
     title: 'Advice App',
