@@ -28,9 +28,13 @@ const BioPage = () => {
             }
       }
     >
-      <img src={smallcirc} className='small-circ' alt='smallcirc' />
-      <img src={bigbottom} className='big-bot' alt='bigbot' />
-      <img src={bigbottom} className='big-top' alt='bigbot' />
+      <img
+        src={smallcirc}
+        className='small-circ user-select-none'
+        alt='smallcirc'
+      />
+      <img src={bigbottom} className='big-bot user-select-none' alt='bigbot' />
+      <img src={bigbottom} className='big-top user-select-none' alt='bigbot' />
       <div className='container mb-5 mt-5'>
         <h3
           style={isDark ? { color: '#f26c50' } : { color: 'white' }}
@@ -45,7 +49,7 @@ const BioPage = () => {
       <div className='container aboutMePaper'>
         <div className='row'>
           {/* img component */}
-          <div className='aboutMeImg col-xl-4 col-md-5 col-sm-12 col-xs-12'>
+          <div className='aboutMeImg col-xl-4 col-md-5 col-sm-12 col-xs-12 user-select-none'>
             <img
               data-aos='fade-up'
               src='https://scontent.fmnl9-2.fna.fbcdn.net/v/t1.0-9/84246825_3504451782961648_5276566424934940672_o.jpg?_nc_cat=101&ccb=3&_nc_sid=174925&_nc_ohc=k5zWpd1NTqoAX_0qlcH&_nc_ht=scontent.fmnl9-2.fna&oh=511348142d228fe8007aa657d2d1e4a4&oe=605A56FB'

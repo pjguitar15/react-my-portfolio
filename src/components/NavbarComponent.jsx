@@ -12,7 +12,7 @@ const NavbarComponent = () => {
   const darktheme = useContext(DarkTheme)
 
   return (
-    <div>
+    <div className='user-select-none'>
       <Navbar.Brand className='col-5 p-0 mx-auto position-absolute'>
         <h1 className='my-portfolio'>my portfolio</h1>
       </Navbar.Brand>

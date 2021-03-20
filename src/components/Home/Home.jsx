@@ -9,18 +9,21 @@ import smallcirc from '../../Assets/SVG/small-circle.svg'
 import bigbottom from '../../Assets/SVG/big-bottom.svg'
 import moontop from '../../Assets/SVG/moon-top.svg'
 import moonbot from '../../Assets/SVG/moon-bot.svg'
-import { DarkTheme, LightTheme, ThemeToggler } from '../../GlobalState'
+import { DarkTheme, ThemeToggler } from '../../GlobalState'
 const Home = () => {
   const darktheme = useContext(DarkTheme)
-  const lighttheme = useContext(LightTheme)
   const [isDark] = useContext(ThemeToggler)
   return (
     <div id='home' className='position-relative'>
-      <img src={smallcirc} className='small-circ' alt='smallcirc' />
-      <img src={bigbottom} className='big-bot' alt='bigbot' />
-      <img src={bigbottom} className='big-top' alt='bigbot' />
-      <img src={moontop} className='moon-top' alt='bigbot' />
-      <img src={moonbot} className='moon-bot' alt='bigbot' />
+      <img
+        src={smallcirc}
+        className='small-circ user-select-none'
+        alt='smallcirc'
+      />
+      <img src={bigbottom} className='big-bot user-select-none' alt='bigbot' />
+      <img src={bigbottom} className='big-top user-select-none' alt='bigbot' />
+      <img src={moontop} className='moon-top user-select-none' alt='bigbot' />
+      <img src={moonbot} className='moon-bot user-select-none' alt='bigbot' />
       <NavbarComponent />
       <Jumbotron
         className='jumbotronStyle rounded-0 m-0'
@@ -40,7 +43,7 @@ const Home = () => {
         >
           <div className='col-sm-12'>
             <img
-              className='col-lg-6 col-md-9 col-sm-12 d-inline undrawSVG mb-4'
+              className='col-lg-6 col-md-9 col-sm-12 d-inline undrawSVG mb-4 user-select-none'
               style={{ height: '100%' }}
               src={logo}
               alt=''
@@ -62,7 +65,7 @@ const Home = () => {
               in Cavite, Philippines.
             </p>
           </div>
-          <p className='mt-5'>
+          <p className='mt-5 user-select-none'>
             <a
               target='_blank'
               href={pdf}
