@@ -52,7 +52,7 @@ const BioPage = () => {
           <div className='aboutMeImg col-xl-4 col-md-5 col-sm-12 col-xs-12 user-select-none'>
             <img
               data-aos='fade-up'
-              src='https://scontent.fmnl9-2.fna.fbcdn.net/v/t1.0-9/84246825_3504451782961648_5276566424934940672_o.jpg?_nc_cat=101&ccb=3&_nc_sid=174925&_nc_ohc=k5zWpd1NTqoAX_0qlcH&_nc_ht=scontent.fmnl9-2.fna&oh=511348142d228fe8007aa657d2d1e4a4&oe=605A56FB'
+              src='https://scontent.fmnl4-2.fna.fbcdn.net/v/t1.0-9/84246825_3504451782961648_5276566424934940672_o.jpg?_nc_cat=101&ccb=1-3&_nc_sid=174925&_nc_ohc=M8YrINf0ow8AX_9zdep&_nc_ht=scontent.fmnl4-2.fna&oh=e20ad55f5f0fc99d51e073c2cd482681&oe=6081E3FB'
               alt='profileimg'
               style={{ width: '100%', borderRadius: '14px' }}
             />
