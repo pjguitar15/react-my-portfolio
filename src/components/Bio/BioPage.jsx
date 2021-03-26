@@ -77,15 +77,22 @@ const BioPage = () => {
 
             <p className='lead aboutMeP text-light'>
               I'm <span className='font-weight-bold'>Philcob Suzuki Josol</span>
-              , a Front End Developer, 22 years old from Trece Martires City,
-              Cavite, Philippines.
+              , I'm a Front End Developer, 22 years old from Trece Martires
+              City, Cavite, Philippines.
             </p>
             <hr />
             <p className='mt-5 bio-paragraph text-light'>
               The moment I created my first Hello World application, I
-              immediately realized my love for development. Since then, I have
-              developed my passion and after a while, I realize that my path is
-              to be a Front End Developer.
+              immediately realized my love for development! Since then, I have
+              developed my passion and went on until a point when I discovered
+              that my path is to be a Front End Developer.
+            </p>
+            <p>
+              I also love learning new stuffs. As a developer, I think one of
+              the most important and critical trait having the curiosity about
+              how to do certain stuffs. How do I do this? How do I do that? This
+              comes to me a lot nowadays and it just make me want to learn more
+              about it and use it in the actual development.
             </p>
           </div>
         </div>
