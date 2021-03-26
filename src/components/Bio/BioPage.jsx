@@ -87,12 +87,12 @@ const BioPage = () => {
               developed my passion and went on until a point when I discovered
               that my path is to be a Front End Developer.
             </p>
-            <p>
+            <p className='text-light'>
               I also love learning new stuffs. As a developer, I think one of
-              the most important and critical trait having the curiosity about
-              how to do certain stuffs. How do I do this? How do I do that? This
-              comes to me a lot nowadays and it just make me want to learn more
-              about it and use it in the actual development.
+              the most important and critical trait is having the curiosity
+              about doing stuffs. How do I do this? How do I do that? This comes
+              to me a lot and it makes me want to learn even more and use it in
+              the actual development.
             </p>
           </div>
         </div>
