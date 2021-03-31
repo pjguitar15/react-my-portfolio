@@ -27,7 +27,7 @@ const RecentProjectsData = [
     text: 'Using Paypal Developer SDK, this E-Commerce App has checkout functionality using Sandbox account. User Auth is powered by Firebase',
     image: shophub,
     tags: ['React', 'Firebase', 'Paypal API'],
-    link: 'https://app.netlify.com/sites/cranky-noyce-d86d5b/overview',
+    link: 'https://cranky-noyce-d86d5b.netlify.app/',
     github: 'https://github.com/pjguitar15/react-shophub'
   },
   {
