@@ -10,6 +10,7 @@ import weswap from '../Assets/weswap.JPG'
 import ilhwa from '../Assets/ilhwa.JPG'
 import chatapp from '../Assets/chatapp.JPG'
 import shophub from '../Assets/shophub.JPG'
+import ladiesapparel from '../Assets/ladiesapparel.JPG'
 
 const RecentProjectsData = [
   {
@@ -29,6 +30,15 @@ const RecentProjectsData = [
     tags: ['React', 'Firebase', 'Paypal API'],
     link: 'https://cranky-noyce-d86d5b.netlify.app/',
     github: 'https://github.com/pjguitar15/react-shophub'
+  },
+  {
+    id: 19,
+    title: 'Ladies Apparel E-Commerce (Libre Baskerville)',
+    text: 'Based from my own design, I used Adobe Illustrator to visualize the design and coded it using React.',
+    image: ladiesapparel,
+    tags: ['React', 'Firebase', 'Paypal API'],
+    link: 'https://tender-einstein-7800e2.netlify.app/',
+    github: 'https://github.com/pjguitar15/react-ladies-apparel'
   },
   {
     id: 8,
