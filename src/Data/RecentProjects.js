@@ -11,6 +11,7 @@ import ilhwa from '../Assets/ilhwa.JPG'
 import chatapp from '../Assets/chatapp.JPG'
 import shophub from '../Assets/shophub.JPG'
 import ladiesapparel from '../Assets/ladiesapparel.JPG'
+import cofeed from '../Assets/cofeed.JPG'
 
 const RecentProjectsData = [
   {
@@ -39,6 +40,15 @@ const RecentProjectsData = [
     tags: ['React', 'Firebase', 'Paypal API'],
     link: 'https://tender-einstein-7800e2.netlify.app/',
     github: 'https://github.com/pjguitar15/react-ladies-apparel'
+  },
+  {
+    id: 20,
+    title: 'Cofeed Social Media App',
+    text: 'An under development Social Media Application that I build for my portfolio',
+    image: cofeed,
+    tags: ['React', 'Firebase', 'Under Development'],
+    link: 'https://stupefied-yonath-e5108d.netlify.app/',
+    github: 'https://github.com/pjguitar15/firebase-socialmedia-react'
   },
   {
     id: 8,
