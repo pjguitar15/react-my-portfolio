@@ -15,13 +15,13 @@ import cofeed from '../Assets/cofeed.JPG'
 
 const RecentProjectsData = [
   {
-    id: 1,
-    title: 'Guitar E-Commerce',
-    text: 'This project taught me how to properly manage components and states. I used useContext hook and Global state file to store all my state.',
-    image: guitarapp,
-    tags: ['React', 'Firebase', 'Stripe API'],
-    link: 'https://philcobguitarshop.netlify.app/',
-    github: 'https://github.com/pjguitar15/react-guitar-ecommerce'
+    id: 20,
+    title: 'Cofeed Social Media App',
+    text: 'An under development Social Media Application that I build for my portfolio',
+    image: cofeed,
+    tags: ['React', 'Firebase', 'Under Development'],
+    link: 'https://stupefied-yonath-e5108d.netlify.app/',
+    github: 'https://github.com/pjguitar15/firebase-socialmedia-react'
   },
   {
     id: 18,
@@ -40,15 +40,6 @@ const RecentProjectsData = [
     tags: ['React', 'Firebase', 'Paypal API'],
     link: 'https://tender-einstein-7800e2.netlify.app/',
     github: 'https://github.com/pjguitar15/react-ladies-apparel'
-  },
-  {
-    id: 20,
-    title: 'Cofeed Social Media App',
-    text: 'An under development Social Media Application that I build for my portfolio',
-    image: cofeed,
-    tags: ['React', 'Firebase', 'Under Development'],
-    link: 'https://stupefied-yonath-e5108d.netlify.app/',
-    github: 'https://github.com/pjguitar15/firebase-socialmedia-react'
   },
   {
     id: 8,
@@ -85,6 +76,15 @@ const RecentProjectsData = [
     tags: ['React', 'Firebase', 'Boostrap'],
     link: 'https://cranky-murdock-3c2193.netlify.app/',
     github: 'https://github.com/pjguitar15/react-firegram'
+  },
+  {
+    id: 1,
+    title: 'Guitar E-Commerce',
+    text: 'This project taught me how to properly manage components and states. I used useContext hook and Global state file to store all my state.',
+    image: guitarapp,
+    tags: ['React', 'Firebase', 'Stripe API'],
+    link: 'https://philcobguitarshop.netlify.app/',
+    github: 'https://github.com/pjguitar15/react-guitar-ecommerce'
   },
   {
     id: 3,
