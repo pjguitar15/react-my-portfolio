@@ -16,7 +16,7 @@ import cofeed from '../Assets/cofeed.JPG'
 const RecentProjectsData = [
   {
     id: 20,
-    title: 'Cofeed Social Media App',
+    title: 'Social Media App',
     text: 'An under development Social Media Application that I build for my portfolio',
     image: cofeed,
     tags: ['React', 'Firebase', 'Under Development'],
