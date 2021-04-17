@@ -30,7 +30,7 @@ const RecentProjectsData = [
     text: 'A Blog Website that is dynamically displaying blogs from MongoDB Database. Deployed using Heroku.',
     image: blogapp,
     tags: ['MERN Stack'],
-    link: 'https://awesome-keller-e347b4.netlify.app/create-blog-post',
+    link: 'https://awesome-keller-e347b4.netlify.app',
     github: 'https://github.com/pjguitar15/mern-blog-app'
   },
   {
