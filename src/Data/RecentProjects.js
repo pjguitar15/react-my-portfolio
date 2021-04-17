@@ -27,7 +27,7 @@ const RecentProjectsData = [
   {
     id: 21,
     title: 'MERN Blog App',
-    text: 'An under development Social Media Application that I build for my portfolio',
+    text: 'A Blog Website that is dynamically displaying blogs from MongoDB Database. Deployed using Heroku.',
     image: blogapp,
     tags: ['MERN Stack'],
     link: 'https://awesome-keller-e347b4.netlify.app/create-blog-post',
