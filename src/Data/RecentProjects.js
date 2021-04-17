@@ -29,7 +29,7 @@ const RecentProjectsData = [
     title: 'MERN Blog App',
     text: 'An under development Social Media Application that I build for my portfolio',
     image: blogapp,
-    tags: ['React', 'Node JS', 'Express', 'MongoDB'],
+    tags: ['MERN Stack'],
     link: 'https://awesome-keller-e347b4.netlify.app/create-blog-post',
     github: 'https://github.com/pjguitar15/mern-blog-app'
   },
