@@ -12,6 +12,7 @@ import chatapp from '../Assets/chatapp.JPG'
 import shophub from '../Assets/shophub.JPG'
 import ladiesapparel from '../Assets/ladiesapparel.JPG'
 import cofeed from '../Assets/cofeed.JPG'
+import blogapp from '../Assets/blogapp.JPG'
 
 const RecentProjectsData = [
   {
@@ -22,6 +23,15 @@ const RecentProjectsData = [
     tags: ['React', 'Firebase', 'Under Development'],
     link: 'https://stupefied-yonath-e5108d.netlify.app/',
     github: 'https://github.com/pjguitar15/firebase-socialmedia-react'
+  },
+  {
+    id: 21,
+    title: 'MERN Blog App',
+    text: 'An under development Social Media Application that I build for my portfolio',
+    image: blogapp,
+    tags: ['React', 'Node JS', 'Express', 'MongoDB'],
+    link: 'https://awesome-keller-e347b4.netlify.app/create-blog-post',
+    github: 'https://github.com/pjguitar15/mern-blog-app'
   },
   {
     id: 18,
