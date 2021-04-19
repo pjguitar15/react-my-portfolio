@@ -33,7 +33,7 @@ const Home = () => {
             : {
                 background: `url(${svgbg}) no-repeat`,
                 backgroundSize: 'cover',
-                height: '100vh',
+                height: '100vh'
               }
         }
       >
@@ -85,7 +85,7 @@ const Home = () => {
               <button
                 style={{
                   border: isDark && darktheme.border,
-                  color: isDark && darktheme.color,
+                  color: isDark && darktheme.color
                 }}
                 className='ml-2 contactButton inlineButtons mt-md-0 mt-3 shadow-sm'
               >
