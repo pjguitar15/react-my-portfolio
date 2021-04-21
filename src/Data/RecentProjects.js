@@ -12,7 +12,7 @@ import chatapp from '../Assets/chatapp.JPG'
 import shophub from '../Assets/shophub.JPG'
 import ladiesapparel from '../Assets/ladiesapparel.JPG'
 import cofeed from '../Assets/cofeed.JPG'
-import blogapp from '../Assets/blogapp.JPG'
+import diaryapp from '../Assets/diaryapp.JPG'
 
 const RecentProjectsData = [
   {
@@ -26,12 +26,12 @@ const RecentProjectsData = [
   },
   {
     id: 21,
-    title: 'MERN Blog App',
-    text: 'A Blog Website that is dynamically displaying blogs from MongoDB Database. Deployed using Heroku.',
-    image: blogapp,
+    title: 'Keept',
+    text: 'A Diary Web Application that is dynamically displaying diary entries from MongoDB Database that runs on Heroku server',
+    image: diaryapp,
     tags: ['MERN Stack'],
-    link: 'https://awesome-keller-e347b4.netlify.app',
-    github: 'https://github.com/pjguitar15/mern-blog-app'
+    link: 'https://goofy-kowalevski-7d5a48.netlify.app/',
+    github: 'https://github.com/pjguitar15/keept-app'
   },
   {
     id: 18,
