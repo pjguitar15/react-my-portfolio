@@ -5,52 +5,26 @@ import chromelogo from '../../Assets/chrome.png'
 import mongodb from '../../Assets/mongodb.png'
 import postmanlogo from '../../Assets/postmanlogo.png'
 
-import {
-  CardWorksData,
-  DarkTheme,
-  LightTheme,
-  ThemeToggler
-} from '../../GlobalState'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 const SkillsSection = () => {
-  const darktheme = useContext(DarkTheme)
-  const lighttheme = useContext(LightTheme)
-  const [isDark, setIsDark] = useContext(ThemeToggler)
-
   useEffect(() => {
     Aos.init({ duration: 2000 })
   }, [])
   return (
-    <div
-      id='skills'
-      className='px-md-5 skillsMainDivv'
-      style={isDark ? darktheme.light : lighttheme.light}
-    >
-      <h3
-        style={
-          isDark ? { color: darktheme.color } : { color: lighttheme.color }
-        }
-        className='text-center skillh3 mb-5 user-select-none'
-      >
-        Skills
-      </h3>
+    <div id='skills' className='px-md-5 skillsMainDivv'>
+      <h3 className='text-center skillh3 mb-5 user-select-none'>Skills</h3>
       <Container className='mb-5 containerSkill'>
-        <Row
-          data-aos='fade-up'
-          style={
-            isDark ? { color: darktheme.color } : { color: lighttheme.color }
-          }
-        >
+        <Row data-aos='fade-up'>
           <Col lg='2' md='4' sm='4' xs='12' className='mx-auto'>
             <div className='text-center my-5'>
               <i
                 className='fab fa-html5'
                 style={{ fontSize: '6rem', color: '#E96228' }}
               ></i>
-              <h4 style={{ fontWeight: '500' }}>HTML</h4>
-              <p>Pretty comfortable</p>
+              <h4 style={{ fontWeight: '500' }}>HTML5</h4>
+              <p>Create website layout contents and structure</p>
             </div>
           </Col>
           <Col lg='2' md='4' sm='4' xs='12' className='mx-auto'>
@@ -59,8 +33,8 @@ const SkillsSection = () => {
                 style={{ fontSize: '6rem', color: '#2965F1' }}
                 className='fab fa-css3-alt'
               ></i>
-              <h4 style={{ fontWeight: '500' }}>CSS</h4>
-              <p>Want some style</p>
+              <h4 style={{ fontWeight: '500' }}>CSS3</h4>
+              <p>Can position things and make good styles</p>
             </div>
           </Col>
           <Col lg='2' md='4' sm='4' xs='12' className='mx-auto'>
@@ -70,7 +44,7 @@ const SkillsSection = () => {
                 className='fab fa-js'
               ></i>
               <h4 style={{ fontWeight: '500' }}>Javascript</h4>
-              <p>Listen to events</p>
+              <p>ES6 Syntax, Higher Order Functions, etc.</p>
             </div>
           </Col>
           <Col lg='2' md='4' sm='4' xs='12' className='mx-auto'>
@@ -80,7 +54,7 @@ const SkillsSection = () => {
                 className='fab fa-react'
               ></i>
               <h4 style={{ fontWeight: '500' }}>React</h4>
-              <p>Javascript Library</p>
+              <p>I love React 100%</p>
             </div>
           </Col>
           <Col lg='2' md='4' sm='4' xs='12' className='mx-auto'>
@@ -90,7 +64,7 @@ const SkillsSection = () => {
                 className='fab fa-node'
               ></i>
               <h4 style={{ fontWeight: '500' }}>Node JS</h4>
-              <p>Servers/Backend</p>
+              <p>Set up servers using ExpressJS Framework</p>
             </div>
           </Col>
           <Col lg='2' md='4' sm='4' xs='12' className='mx-auto'>
@@ -101,14 +75,14 @@ const SkillsSection = () => {
                 alt='firebase'
               />
               <h4 style={{ fontWeight: '500' }}>Firebase</h4>
-              <p>Backend Service</p>
+              <p>For easier projects, I use Backend Service</p>
             </div>
           </Col>
           <Col lg='2' md='4' sm='4' xs='12' className='mx-auto'>
             <div className='text-center my-5'>
               <img style={{ maxHeight: '6rem' }} src={mongodb} alt='firebase' />
               <h4 style={{ fontWeight: '500' }}>MongoDB</h4>
-              <p>NoSQL Database</p>
+              <p>NoSQL Database and Mongoose as ORM</p>
             </div>
           </Col>
           <Col lg='2' md='4' sm='4' xs='12' className='mx-auto'>
