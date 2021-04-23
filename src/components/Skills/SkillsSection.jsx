@@ -1,13 +1,15 @@
 import React, { useContext, useEffect } from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
 import firebaselogo from '../../Assets/firebase.png'
+import chromelogo from '../../Assets/chrome.png'
 import mongodb from '../../Assets/mongodb.png'
+import postmanlogo from '../../Assets/postmanlogo.png'
 
 import {
   CardWorksData,
   DarkTheme,
   LightTheme,
-  ThemeToggler,
+  ThemeToggler
 } from '../../GlobalState'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -107,6 +109,60 @@ const SkillsSection = () => {
               <img style={{ maxHeight: '6rem' }} src={mongodb} alt='firebase' />
               <h4 style={{ fontWeight: '500' }}>MongoDB</h4>
               <p>NoSQL Database</p>
+            </div>
+          </Col>
+          <Col lg='2' md='4' sm='4' xs='12' className='mx-auto'>
+            <div className='text-center my-5'>
+              <img
+                style={{ maxHeight: '6rem' }}
+                src={chromelogo}
+                alt='firebase'
+              />
+              <h4 style={{ fontWeight: '500' }}>Dev Tools</h4>
+              <p>Tests projects using Dev tools</p>
+            </div>
+          </Col>
+          {/* Postman */}
+          <Col lg='2' md='4' sm='4' xs='12' className='mx-auto'>
+            <div className='text-center my-5'>
+              <img
+                style={{ maxHeight: '6rem' }}
+                src={postmanlogo}
+                alt='firebase'
+              />
+              <h4 style={{ fontWeight: '500' }}>Test API</h4>
+              <p>Easily test HTTP requests</p>
+            </div>
+          </Col>
+          <Col lg='2' md='4' sm='4' xs='12' className='mx-auto'>
+            <div className='text-center my-5'>
+              <i
+                style={{ fontSize: '6rem', color: 'black' }}
+                className='fab fa-github'
+              ></i>
+              <h4 style={{ fontWeight: '500' }}>Github</h4>
+              <p>Version Control (Git)</p>
+            </div>
+          </Col>
+          {/* Terminal */}
+          <Col lg='2' md='4' sm='4' xs='12' className='mx-auto'>
+            <div className='text-center my-5'>
+              <i
+                style={{ fontSize: '6rem', color: 'black' }}
+                className='fas fa-terminal'
+              ></i>
+              <h4 style={{ fontWeight: '500' }}>Terminal</h4>
+              <p>I prefer using Git Bash</p>
+            </div>
+          </Col>
+          <Col lg='2' md='4' sm='4' xs='12' className='mx-auto'>
+            <div className='text-center my-5'>
+              <i
+                style={{ fontSize: '6rem', color: '#7952B3' }}
+                className='fab fa-bootstrap'
+              ></i>
+              <h4 style={{ fontWeight: '500' }}>Bootstrap</h4>
+              <p>Neat and Responsive Designs</p>
             </div>
           </Col>
         </Row>
