@@ -65,9 +65,9 @@ const RecentProjectsData = [
     title: 'Chat App',
     text: 'A chat web application with functional realtime database and user authentication.',
     image: chatapp,
-    tags: ['React', 'Firebase', 'Bootstrap'],
-    link: 'https://philcobchatapp.netlify.app/',
-    github: 'https://github.com/pjguitar15/firebase-auth'
+    tags: ['React', 'Firebase', 'styled-components'],
+    link: 'https://elated-torvalds-4f6372.netlify.app/chat/2e2ee861-ef47-4691-93c1-48fc171691da',
+    github: 'https://github.com/pjguitar15/fire-chat'
   },
   {
     id: 5,
