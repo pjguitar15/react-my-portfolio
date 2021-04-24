@@ -16,6 +16,15 @@ import diaryapp from '../Assets/diaryapp.JPG'
 
 const RecentProjectsData = [
   {
+    id: Date.now(),
+    title: 'Chat App',
+    text: 'A chat web application with functional realtime database and user authentication.',
+    image: chatapp,
+    tags: ['React', 'Firebase', 'styled-components'],
+    link: 'https://elated-torvalds-4f6372.netlify.app/',
+    github: 'https://github.com/pjguitar15/fire-chat'
+  },
+  {
     id: 20,
     title: 'Social Media App',
     text: 'An under development Social Media Application that I build for my portfolio',
@@ -59,15 +68,6 @@ const RecentProjectsData = [
     tags: ['React', 'Boostrap', 'External API'],
     link: 'https://laughing-bohr-e8ec18.netlify.app/',
     github: 'https://github.com/pjguitar15/react-movie-app'
-  },
-  {
-    id: Date.now(),
-    title: 'Chat App',
-    text: 'A chat web application with functional realtime database and user authentication.',
-    image: chatapp,
-    tags: ['React', 'Firebase', 'styled-components'],
-    link: 'https://elated-torvalds-4f6372.netlify.app/',
-    github: 'https://github.com/pjguitar15/fire-chat'
   },
   {
     id: 5,
