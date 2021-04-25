@@ -11,7 +11,7 @@ import Footer from './components/Footer/Footer.jsx'
 import GlobalState from './GlobalState'
 const App = () => {
   return (
-    <div className='app'>
+    <div>
       <GlobalState>
         <Home />
         <RecentProjects />

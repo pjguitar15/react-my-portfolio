@@ -1,22 +1,18 @@
-import React, { useContext } from 'react'
-import { Card, CardDeck, Button } from 'react-bootstrap'
-import { DarkTheme, LightTheme, ThemeToggler } from '../../GlobalState'
+import React from 'react'
+import { Card, CardDeck } from 'react-bootstrap'
+
 import RecentProjectsData from '../../Data/RecentProjects'
 import 'aos/dist/aos.css'
 const RecentProjects = () => {
-  const darktheme = useContext(DarkTheme)
-  const lighttheme = useContext(LightTheme)
-  const [isDark, setIsDark] = useContext(ThemeToggler)
-
   return (
     <div
       id='projects'
       className='skillsMainDiv'
-      style={isDark ? darktheme.light : { background: 'white' }}
+      style={{ background: 'white' }}
     >
       <div className='container mb-5 mt-5'>
         <h3
-          style={isDark ? { color: darktheme.color } : { color: '#1F8EB9' }}
+          style={{ color: '#1F8EB9' }}
           className='text-left font-weight-bold myRecentProjectsh3 mt-5'
         >
           <span>—</span> <span> My Recent Projects</span>
@@ -26,75 +22,112 @@ const RecentProjects = () => {
       <div className='container'>
         <div className='row'>
           {RecentProjectsData.map((item, index) => (
-            <CardDeck
-              className='col-sm-12 col-md-6 col-lg-6 col-xl-4 mx-auto my-4 text-center'
-              key={index}
-            >
+            <CardDeck className='col-12 mx-auto my-5' key={index}>
               <div data-aos='fade-up'>
-                <Card
-                  className={`${isDark ? 'border' : 'border-0 shadow-sm'} `}
-                  style={isDark ? darktheme.dark : lighttheme.light}
-                >
-                  <Card.Img variant='top' src={item.image} />
-                  <Card.Body
-                    style={
-                      isDark
-                        ? { color: darktheme.color }
-                        : { color: lighttheme.color }
-                    }
-                  >
+                <div className='border-0 row'>
+                  <div className='col-6'>
+                    <div className='shadow'>
+                      <div
+                        className='d-flex align-items-center px-3'
+                        style={{
+                          height: '30px',
+                          background: 'white'
+                        }}
+                      >
+                        <div
+                          style={{
+                            height: '8px',
+                            width: ' 8px',
+                            background: '#FF9B98',
+                            borderRadius: '50%',
+                            marginRight: '5px'
+                          }}
+                        ></div>
+                        <div
+                          style={{
+                            height: '8px',
+                            width: ' 8px',
+                            background: '#F8CC8F',
+                            borderRadius: '50%',
+                            marginRight: '5px'
+                          }}
+                        ></div>
+                        <div
+                          style={{
+                            height: '8px',
+                            width: ' 8px',
+                            background: '#5DDF89',
+                            borderRadius: '50%',
+                            marginRight: '5px'
+                          }}
+                        ></div>
+                      </div>
+                      <img className='w-100' src={item.image} />
+                    </div>
+                  </div>
+                  <Card.Body className='col-6'>
+                    <Card.Title
+                      style={{
+                        color: '#072947',
+                        fontSize: '25px',
+                        fontWeight: '800'
+                      }}
+                      className='mt-3'
+                    >
+                      {item.title}
+                    </Card.Title>
                     {item.tags.map((item, index) => (
                       <span
                         key={index}
                         style={{
                           userSelect: 'none',
                           background: 'orange',
-                          padding: '5px 10px',
+                          padding: '3px 10px',
                           fontSize: '11px',
                           color: 'white',
                           fontWeight: '700',
                           borderRadius: '15px',
-                          margin: '0px 3px',
+                          margin: '0px 3px'
                         }}
                       >
                         {item}
                       </span>
                     ))}
-
-                    <Card.Title className='mt-3'>{item.title}</Card.Title>
                     <Card.Text
-                      style={{ fontSize: '16px' }}
-                      className='text-justify lead'
+                      style={{ fontSize: '16px', color: '#A4A5A5' }}
+                      className='text-justify mt-4'
                     >
                       {item.text}
                     </Card.Text>
-                    <Button
-                      href={item.link}
-                      target='_blank'
-                      variant='dark'
-                      size='sm'
-                    >
-                      <i
-                        style={{ marginRight: '4px' }}
-                        className='fas fa-laptop-code'
-                      ></i>{' '}
-                      View Project
-                    </Button>
-                    <Button
-                      href={item.github}
-                      target='_blank'
-                      variant='dark'
-                      size='sm'
-                      style={{ marginLeft: '10px' }}
-                    >
-                      <i
-                        style={{ fontSize: '16px', marginRight: '6px' }}
-                        className='fab fa-github'
-                      ></i>
-                      Github Repo
-                    </Button>
+                    <p className='mt-4 user-select-none'>
+                      <a
+                        style={{ padding: '8px 10px', fontSize: '12px' }}
+                        href={item.link}
+                        target='_blank'
+                        className='downloadCv text-decoration-none'
+                      >
+                        <i
+                          style={{ marginRight: '4px' }}
+                          className='fas fa-laptop-code'
+                        ></i>{' '}
+                        View Project
+                      </a>
+
+                      <a
+                        style={{ padding: '8px 10px', fontSize: '12px' }}
+                        href={item.github}
+                        target='_blank'
+                        className='ml-3 contactButton inlineButtons mt-md-0 mt-3'
+                      >
+                        <i
+                          style={{ fontSize: '16px', marginRight: '6px' }}
+                          className='fab fa-github'
+                        ></i>
+                        Github Repo
+                      </a>
+                    </p>
                   </Card.Body>
-                </Card>
+                </div>
               </div>
             </CardDeck>
           ))}

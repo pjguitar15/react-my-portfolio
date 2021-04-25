@@ -57,16 +57,18 @@ body {
 }
 
 .mainNav > .active {
-  color: #323232;
-  /* background-color: #f5f4f8; */
+  color: white;
+  background-color: #13ade3;
+  border-radius: 7px;
   transition-duration: 0.3s;
-
   font-weight: 900;
 }
 
 .jumbotronStyle {
   height: 100vh;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -109,38 +111,37 @@ body {
 }
 
 .downloadCv {
-  background: white;
-  padding: 8px 20px;
+  background: #13ade3;
+  padding: 10px 18px;
   border: none;
-  color: black;
+  color: white;
   font-weight: 600;
-  border-radius: 50px;
+  border-radius: 7px;
   font-size: 14px;
   transition: 0.2s;
   text-decoration: none;
 }
 
 .downloadCv:hover {
-  background: #ffa08d;
+  background: #58c6ee;
   color: white;
 }
 .card-item:hover {
   border: #f26c50 solid 2px;
 }
 .contactButton {
-  background: none;
-  padding: 5.9px 20px;
-  border: solid white 0.1px;
-  color: white;
+  background: #e3f4fd;
+  padding: 10px 18px;
+  border: none;
+  color: #13ade3;
   font-weight: 600;
-  border-radius: 50px;
+  border-radius: 7px;
   font-size: 14px;
   transition: 0.2s;
+  text-decoration: none;
 }
 .contactButton:hover {
-  background: white;
-  border: solid white 0.2px;
-  color: black;
+  background: #ebf7ff;
 }
 .fa-sun,
 .fa-moon {
@@ -212,10 +213,6 @@ textarea:focus,
   width: 150px;
   margin: auto;
 }
-.undrawSVG {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
 
 .contacth1 {
   font-weight: 800;
@@ -275,7 +272,7 @@ textarea:focus,
 }
 @media (min-width: 1200px) {
   .navLink {
-    font-size: 17px;
+    font-size: 14px;
   }
   .moon-top {
     position: absolute;
