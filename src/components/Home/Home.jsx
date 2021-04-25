@@ -148,10 +148,11 @@ const Home = () => {
               letterSpacing: '1px'
             }}
           >
-            I’m passionate about HTML, CSS, Javascript, and React JS. I work
-            hard, I care about writing clean code and I genuinely love to learn.
-            I’m currently looking for the right opportunity to work in an
-            environment that will help me progress into a full-stack role.
+            I'm a Frontend Developer and I’m passionate about HTML, CSS,
+            Javascript, and React JS. I work hard, I care about writing clean
+            code and I genuinely love to learn. I’m currently looking for the
+            right opportunity to work in an environment that will help me
+            progress into a full-stack role.
           </p>
           {/* Buttons */}
           <p className='mt-4 user-select-none'>
