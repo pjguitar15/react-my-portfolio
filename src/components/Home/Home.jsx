@@ -30,7 +30,7 @@ const Home = () => {
           alt='bottomleft'
         />
         <img
-          style={{ position: 'absolute', top: '0', right: '0', width: '25rem' }}
+          style={{ position: 'absolute', top: '0', right: '0', width: '32rem' }}
           src={topright}
           alt='topright'
         />
