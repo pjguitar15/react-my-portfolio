@@ -18,7 +18,7 @@ const NavbarComponent = () => {
         ></Link>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
-          <Nav className='text-center mainNav rounded ml-auto'>
+          <Nav className='text-center mainNav rounded ml-auto bg-white'>
             <Link
               activeClass='active'
               to='home'

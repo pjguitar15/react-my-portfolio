@@ -25,7 +25,7 @@ const RecentProjects = () => {
             <CardDeck className='col-12 mx-auto my-5' key={index}>
               <div data-aos='fade-up'>
                 <div className='border-0 row'>
-                  <div className='col-6'>
+                  <div className='col-12 col-md-6'>
                     <div className='shadow'>
                       <div
                         className='d-flex align-items-center px-3'
@@ -65,7 +65,7 @@ const RecentProjects = () => {
                       <img className='w-100' src={item.image} />
                     </div>
                   </div>
-                  <Card.Body className='col-6'>
+                  <Card.Body className='col-12 col-md-6'>
                     <Card.Title
                       style={{
                         color: '#072947',
