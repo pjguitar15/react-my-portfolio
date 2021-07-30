@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 * {
   font-family: 'Montserrat';
 }
@@ -9,6 +10,66 @@ body {
   padding: 0;
   font-family: 'Montserrat';
 }
+/* RESPONSIVE LANDING PAGE ART */
+.art-xl {
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+  width: 35rem;
+}
+.art-lg {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 25rem;
+}
+.art-md {
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 20rem;
+}
+.art-default {
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 15rem;
+}
+/* END OF RESPONSIVE LANDING PAGE ART */
+
+/* SVG SHAPES */
+.top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25rem;
+  z-index: -1;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 25rem;
+}
+.bottom-left-sm {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20rem;
+}
+.top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40rem;
+}
+/* END OF SVG SHAPES */
 
 .my-portfolio {
   font-family: 'Montserrat', sans-serif;
@@ -57,7 +118,7 @@ body {
 }
 
 .mainNav > .active {
-  color: white;
+  color: white !important;
   background-color: #13ade3;
   border-radius: 7px;
   transition-duration: 0.3s;

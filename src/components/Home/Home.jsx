@@ -14,91 +14,59 @@ const Home = () => {
       <NavbarComponent />
       <Jumbotron className='jumbotronStyle bg-white rounded-0 m-0 p-0'>
         {/* SVG START */}
+        <img className='top-left' src={topleft} alt='topleft' />
         <img
-          style={{ position: 'absolute', top: '0', left: '0', width: '25rem' }}
-          src={topleft}
-          alt='topleft'
-        />
-        <img
-          style={{
-            position: 'absolute',
-            bottom: '0',
-            left: '0',
-            width: '25rem'
-          }}
+          className='d-none d-md-block bottom-left'
           src={bottomleft}
           alt='bottomleft'
         />
         <img
-          style={{ position: 'absolute', top: '0', right: '0', width: '38rem' }}
-          src={topright}
-          alt='topright'
+          className='d-md-none bottom-left-sm'
+          src={bottomleft}
+          alt='bottomleft'
         />
+        <img className='top-right' src={topright} alt='topright' />
         {/* Arts diff sizes */}
         {/* xl */}
         <img
-          className='d-none d-xl-block'
-          style={{
-            position: 'absolute',
-            bottom: '3rem',
-            right: '3rem',
-            width: '45rem'
-          }}
+          className='d-none art-xl d-xl-block'
           src={landingpageart}
           alt='landingpageart'
         />
         {/* lg */}
         <img
-          className='d-none d-lg-block d-xl-none'
-          style={{
-            position: 'absolute',
-            top: '2rem',
-            right: '0',
-            left: '0',
-            margin: 'auto',
-            width: '25rem'
-          }}
+          className='d-none art-lg d-lg-block d-xl-none'
           src={landingpageart}
           alt='landingpageart'
         />
+        {/* md */}
         <img
-          className='d-none d-md-block d-lg-none'
-          style={{
-            position: 'absolute',
-            top: '3rem',
-            right: '0',
-            left: '0',
-            margin: 'auto',
-            width: '20rem'
-          }}
+          className='d-none art-md d-md-block d-lg-none'
           src={landingpageart}
           alt='landingpageart'
         />
+        {/* default */}
         <img
-          className='d-md-none'
-          style={{
-            position: 'absolute',
-            top: '3rem',
-            right: '0',
-            left: '0',
-            margin: 'auto',
-            width: '15rem'
-          }}
+          className='d-md-none art-default'
           src={landingpageart}
           alt='landingpageart'
         />
         {/* SVG END */}
         <Container className='text-center text-xl-left mb-5'>
           {/* Jumbotron Text */}
-          {/* md */}
-          <div className='d-none d-md-block mt-lg-5 mt-xl-0'>
+
+          <div
+            className='d-none d-md-block mt-lg-5 mt-xl-0 position-relative'
+            style={{ zIndex: '1' }}
+          >
             <h1
-              className='d-inline-block'
+              className='d-inline-block test'
               style={{
                 fontSize: '60px',
                 color: '#072947',
                 fontFamily: 'roboto',
-                fontWeight: '900'
+                fontWeight: '900',
+                
               }}
             >
               HELLO!
@@ -141,7 +109,7 @@ const Home = () => {
           </div>
 
           <p
-            className='mt-2 d-inline-block col-xl-8 p-0'
+            className='mt-2 d-inline-block col-xl-8 col-lg-6 col-md-12 col-12 p-0'
             style={{
               color: '#a4a5a5',
               lineHeight: '30px',
@@ -150,9 +118,7 @@ const Home = () => {
           >
             I'm a Frontend Developer and I’m passionate about HTML, CSS,
             Javascript, and React JS. I work hard, I care about writing clean
-            code and I genuinely love to learn. I’m currently looking for the
-            right opportunity to work in an environment that will help me
-            progress into a full-stack role.
+            code and I genuinely love to learn.
           </p>
           {/* Buttons */}
           <p className='mt-4 user-select-none'>

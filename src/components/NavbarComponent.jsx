@@ -8,14 +8,6 @@ const NavbarComponent = () => {
         <h1 className='my-portfolio'>my portfolio</h1>
       </Navbar.Brand>
       <Navbar expand='xl' className='main-navbar fixed-top p-3'>
-        <Link
-          activeClass='active'
-          to='home'
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-        ></Link>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='text-center mainNav rounded ml-auto bg-white'>
