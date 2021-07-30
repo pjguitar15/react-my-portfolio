@@ -24,7 +24,7 @@ const BioPage = () => {
           : {
               background: `url(${svgbg}) no-repeat`,
               backgroundSize: 'cover',
-              width: '100%'
+              width: '100%',
             }
       }
     >
@@ -52,7 +52,7 @@ const BioPage = () => {
           <div className='aboutMeImg col-xl-4 col-md-5 col-sm-12 col-xs-12 user-select-none'>
             <img
               data-aos='fade-up'
-              src='https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.6435-9/61514079_2744645532275614_6511336116279312384_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=YGFH_IYMs38AX__6Z-7&_nc_oc=AQl9c7T22BKQtspQCzseVziu3ikSolMMJHQL4UXev_iFus_0Vcx5waHo3vQ1UDrNSthISiQMItQAipihwitwRHUt&_nc_ht=scontent.fmnl4-1.fna&oh=9873a066e93772cedf98dee68dcaf883&oe=60A8281A'
+              src='https://scontent.fmnl13-1.fna.fbcdn.net/v/t1.6435-9/61514079_2744645532275614_6511336116279312384_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_eui2=AeFJUNa7aABLxHWYk8-H_4j_UjRXIx81s1hSNFcjHzWzWCqX7komrEjHAlj2rVEOLctwaYj70sxj_ytIWp_jw7VW&_nc_ohc=fxuQsmR8wboAX_CkmK3&_nc_oc=AQlj8ZdRKS4TRdBc0Wumx9FdDTNuRyUQqyWmOKNm3p-qLtz-3NW6saMT68Q8LyAmN8F8J5YUs77OYxMF-41C43I8&_nc_ht=scontent.fmnl13-1.fna&oh=8595548e69a23a148396061c3600ee12&oe=612AAC9A'
               alt='profileimg'
               style={{ width: '100%', borderRadius: '14px' }}
             />
@@ -68,7 +68,7 @@ const BioPage = () => {
                 style={{
                   display: 'flex',
                   justifyContent: 'center',
-                  flexDirection: 'column'
+                  flexDirection: 'column',
                 }}
               >
                 <div className='display-3 mt-sm-5 text-light'>Hello!</div>
